@@ -5,7 +5,7 @@
 //  Created by Ihor Demchenko on 03.04.2022.
 //
 
-import UIKit
+import SwiftUI
 
 public final class NavigationHierarchyRouteRenderer {
     

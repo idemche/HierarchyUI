@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/HierarchyUI.svg?style=flat)](https://cocoapods.org/pods/HierarchyUI)
 [![Platform](https://img.shields.io/cocoapods/p/HierarchyUI.svg?style=flat)](https://cocoapods.org/pods/HierarchyUI)
 
+<a href="https://github.com/apple/swift-package-manager" alt="HierarchyUI on Swift Package Manager" title="HierarchyUI on Swift Package Manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" /></a>
+</p>
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

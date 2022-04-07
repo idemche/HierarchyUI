@@ -1,0 +1,16 @@
+PODS:
+  - HierarchyUI (0.1.0)
+
+DEPENDENCIES:
+  - HierarchyUI (from `../`)
+
+EXTERNAL SOURCES:
+  HierarchyUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HierarchyUI: b65c063541e414d5f3208d8eb3ff40d802516acc
+
+PODFILE CHECKSUM: a09ab1bfb09041e362e73d29186d088dc3ac2c9d
+
+COCOAPODS: 1.11.3

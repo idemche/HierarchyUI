@@ -1,0 +1,6 @@
+framework module HierarchyUI {
+  umbrella header "HierarchyUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

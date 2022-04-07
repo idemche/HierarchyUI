@@ -1,0 +1,22 @@
+{
+  "name": "HierarchyUI",
+  "version": "0.1.0",
+  "summary": "A short description of HierarchyUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/idemche/HierarchyUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "idemche": "idemche@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/idemche/HierarchyUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "HierarchyUI/Classes/**/*"
+}

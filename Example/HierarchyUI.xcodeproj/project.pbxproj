@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		0FDB18D94E6FD3E41CF22EE7 /* Pods_HierarchyUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B67CC3E8E484069BDBC9D /* Pods_HierarchyUI_Example.framework */; };
+		51FDB1BF27FF7639003F7989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1BE27FF7639003F7989 /* AppDelegate.swift */; };
+		51FDB1CF27FF7678003F7989 /* HierarchyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */; };
+		51FDB1D027FF7678003F7989 /* HostingControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CA27FF7678003F7989 /* HostingControllers.swift */; };
+		51FDB1D127FF7678003F7989 /* HierarchyRouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */; };
+		51FDB1D227FF7678003F7989 /* View+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CC27FF7678003F7989 /* View+Route.swift */; };
+		51FDB1D327FF7678003F7989 /* HierarchyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */; };
+		51FDB1D427FF7678003F7989 /* Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CE27FF7678003F7989 /* Hierarchy.swift */; };
+		51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D527FF769A003F7989 /* ContentViews.swift */; };
+		51FDB1D827FF769A003F7989 /* MainNavigationHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		D13040A51BB0F2AABA7BFDA6 /* Pods_HierarchyUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C8AF72E017500EA7F2A3AA /* Pods_HierarchyUI_Example.framework */; };
-		F8CEC7D204485E8510AFCEA4 /* Pods_HierarchyUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8F803C076975D5F061ADB1 /* Pods_HierarchyUI_Tests.framework */; };
+		D9142C91A4BC9D84C2386387 /* Pods_HierarchyUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00999AE48321AB9B62851756 /* Pods_HierarchyUI_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,25 +34,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B35161D6DCF9BE6A490DDC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2071DC7EE3806B944EC22C7B /* Pods-HierarchyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		397C975C937C9CA1A00DC511 /* Pods-HierarchyUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Tests/Pods-HierarchyUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		447BA72A38AB3324C2F7C0E3 /* Pods-HierarchyUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Tests/Pods-HierarchyUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5D72D2965A588A86EE39C6B7 /* HierarchyUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HierarchyUI.podspec; path = ../HierarchyUI.podspec; sourceTree = "<group>"; };
+		007B67CC3E8E484069BDBC9D /* Pods_HierarchyUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HierarchyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00999AE48321AB9B62851756 /* Pods_HierarchyUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HierarchyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		043D64FF72628C29D3EB34C2 /* Pods-HierarchyUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Tests/Pods-HierarchyUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1B35161D6DCF9BE6A490DDC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4D743F0E35C5E098EC329270 /* Pods-HierarchyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Example.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		51FDB1BE27FF7639003F7989 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../LadderUI/Example/LadderUI/AppDelegate.swift; sourceTree = "<group>"; };
+		51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRoute.swift; sourceTree = "<group>"; };
+		51FDB1CA27FF7678003F7989 /* HostingControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingControllers.swift; sourceTree = "<group>"; };
+		51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRouteRenderer.swift; sourceTree = "<group>"; };
+		51FDB1CC27FF7678003F7989 /* View+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Route.swift"; sourceTree = "<group>"; };
+		51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyNavigator.swift; sourceTree = "<group>"; };
+		51FDB1CE27FF7678003F7989 /* Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hierarchy.swift; sourceTree = "<group>"; };
+		51FDB1D527FF769A003F7989 /* ContentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
+		51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationHierarchy.swift; sourceTree = "<group>"; };
+		5D72D2965A588A86EE39C6B7 /* HierarchyUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HierarchyUI.podspec; path = ../HierarchyUI.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HierarchyUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HierarchyUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* HierarchyUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HierarchyUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6804F8ACCB40D2E64F9E2B0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		7F8F803C076975D5F061ADB1 /* Pods_HierarchyUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HierarchyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A845571265B944912831BA4F /* Pods-HierarchyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Example.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C7C8AF72E017500EA7F2A3AA /* Pods_HierarchyUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HierarchyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6804F8ACCB40D2E64F9E2B0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AE396BAA098CEF1DCAA283EA /* Pods-HierarchyUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Tests/Pods-HierarchyUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2855FA9B626108DA0A6F31B /* Pods-HierarchyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13040A51BB0F2AABA7BFDA6 /* Pods_HierarchyUI_Example.framework in Frameworks */,
+				0FDB18D94E6FD3E41CF22EE7 /* Pods_HierarchyUI_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,22 +74,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CEC7D204485E8510AFCEA4 /* Pods_HierarchyUI_Tests.framework in Frameworks */,
+				D9142C91A4BC9D84C2386387 /* Pods_HierarchyUI_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51FDB1C027FF7664003F7989 /* HierarchyUI */ = {
+			isa = PBXGroup;
+			children = (
+				51FDB1C127FF7664003F7989 /* Classes */,
+				51FDB1C427FF7664003F7989 /* Assets */,
+			);
+			name = HierarchyUI;
+			path = ../HierarchyUI;
+			sourceTree = "<group>";
+		};
+		51FDB1C127FF7664003F7989 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				51FDB1CC27FF7678003F7989 /* View+Route.swift */,
+				51FDB1CE27FF7678003F7989 /* Hierarchy.swift */,
+				51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */,
+				51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */,
+				51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */,
+				51FDB1CA27FF7678003F7989 /* HostingControllers.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		51FDB1C427FF7664003F7989 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				51FDB1C027FF7664003F7989 /* HierarchyUI */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for HierarchyUI */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				DAB828AB96EE714E238618ED /* Pods */,
-				C90183A87AB9AD5D471033C9 /* Frameworks */,
+				F827B6F30E7A4D45938187D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,9 +136,9 @@
 		607FACD21AFB9204008FA782 /* Example for HierarchyUI */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				51FDB1BE27FF7639003F7989 /* AppDelegate.swift */,
+				51FDB1D527FF769A003F7989 /* ContentViews.swift */,
+				51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -139,25 +182,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C90183A87AB9AD5D471033C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7C8AF72E017500EA7F2A3AA /* Pods_HierarchyUI_Example.framework */,
-				7F8F803C076975D5F061ADB1 /* Pods_HierarchyUI_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DAB828AB96EE714E238618ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2071DC7EE3806B944EC22C7B /* Pods-HierarchyUI_Example.debug.xcconfig */,
-				A845571265B944912831BA4F /* Pods-HierarchyUI_Example.release.xcconfig */,
-				397C975C937C9CA1A00DC511 /* Pods-HierarchyUI_Tests.debug.xcconfig */,
-				447BA72A38AB3324C2F7C0E3 /* Pods-HierarchyUI_Tests.release.xcconfig */,
+				B2855FA9B626108DA0A6F31B /* Pods-HierarchyUI_Example.debug.xcconfig */,
+				4D743F0E35C5E098EC329270 /* Pods-HierarchyUI_Example.release.xcconfig */,
+				AE396BAA098CEF1DCAA283EA /* Pods-HierarchyUI_Tests.debug.xcconfig */,
+				043D64FF72628C29D3EB34C2 /* Pods-HierarchyUI_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F827B6F30E7A4D45938187D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				007B67CC3E8E484069BDBC9D /* Pods_HierarchyUI_Example.framework */,
+				00999AE48321AB9B62851756 /* Pods_HierarchyUI_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,11 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HierarchyUI_Example" */;
 			buildPhases = (
-				271533022480C63C81CE35DC /* [CP] Check Pods Manifest.lock */,
+				364DBEFC256CF8719F4E982D /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				44FB166EDF032E02A30671A3 /* [CP] Embed Pods Frameworks */,
+				0D885323CE05F173D7FC5F90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HierarchyUI_Tests" */;
 			buildPhases = (
-				C7CC88BA19BDDE2E7C63117F /* [CP] Check Pods Manifest.lock */,
+				61074423C00EC0ED1856FA8B /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -213,10 +255,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TA84XW3A99;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TA84XW3A99;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -262,7 +306,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		271533022480C63C81CE35DC /* [CP] Check Pods Manifest.lock */ = {
+		0D885323CE05F173D7FC5F90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HierarchyUI/HierarchyUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HierarchyUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364DBEFC256CF8719F4E982D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,25 +346,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44FB166EDF032E02A30671A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HierarchyUI/HierarchyUI.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HierarchyUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7CC88BA19BDDE2E7C63117F /* [CP] Check Pods Manifest.lock */ = {
+		61074423C00EC0ED1856FA8B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,8 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				51FDB1BF27FF7639003F7989 /* AppDelegate.swift in Sources */,
+				51FDB1D427FF7678003F7989 /* Hierarchy.swift in Sources */,
+				51FDB1D327FF7678003F7989 /* HierarchyNavigator.swift in Sources */,
+				51FDB1D127FF7678003F7989 /* HierarchyRouteRenderer.swift in Sources */,
+				51FDB1D827FF769A003F7989 /* MainNavigationHierarchy.swift in Sources */,
+				51FDB1D027FF7678003F7989 /* HostingControllers.swift in Sources */,
+				51FDB1D227FF7678003F7989 /* View+Route.swift in Sources */,
+				51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */,
+				51FDB1CF27FF7678003F7989 /* HierarchyRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,14 +406,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,11 +462,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -465,48 +509,52 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2071DC7EE3806B944EC22C7B /* Pods-HierarchyUI_Example.debug.xcconfig */;
+			baseConfigurationReference = B2855FA9B626108DA0A6F31B /* Pods-HierarchyUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TA84XW3A99;
 				INFOPLIST_FILE = HierarchyUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A845571265B944912831BA4F /* Pods-HierarchyUI_Example.release.xcconfig */;
+			baseConfigurationReference = 4D743F0E35C5E098EC329270 /* Pods-HierarchyUI_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TA84XW3A99;
 				INFOPLIST_FILE = HierarchyUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 397C975C937C9CA1A00DC511 /* Pods-HierarchyUI_Tests.debug.xcconfig */;
+			baseConfigurationReference = AE396BAA098CEF1DCAA283EA /* Pods-HierarchyUI_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TA84XW3A99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,8 +575,9 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 447BA72A38AB3324C2F7C0E3 /* Pods-HierarchyUI_Tests.release.xcconfig */;
+			baseConfigurationReference = 043D64FF72628C29D3EB34C2 /* Pods-HierarchyUI_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TA84XW3A99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

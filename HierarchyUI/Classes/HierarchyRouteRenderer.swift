@@ -234,6 +234,8 @@ public final class NavigationHierarchyRouteRenderer {
         }
         /// ======================================================================
     })
+    
+    public init() {}
 
     public func render(hierarchy: NavigationHierarchy) -> some UIViewController {
         let currentRoute = hierarchy.structure()

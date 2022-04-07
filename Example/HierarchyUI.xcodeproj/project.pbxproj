@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FDB18D94E6FD3E41CF22EE7 /* Pods_HierarchyUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B67CC3E8E484069BDBC9D /* Pods_HierarchyUI_Example.framework */; };
-		51FDB1BF27FF7639003F7989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1BE27FF7639003F7989 /* AppDelegate.swift */; };
-		51FDB1CF27FF7678003F7989 /* HierarchyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */; };
-		51FDB1D027FF7678003F7989 /* HostingControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CA27FF7678003F7989 /* HostingControllers.swift */; };
-		51FDB1D127FF7678003F7989 /* HierarchyRouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */; };
-		51FDB1D227FF7678003F7989 /* View+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CC27FF7678003F7989 /* View+Route.swift */; };
-		51FDB1D327FF7678003F7989 /* HierarchyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */; };
-		51FDB1D427FF7678003F7989 /* Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1CE27FF7678003F7989 /* Hierarchy.swift */; };
+		5102A2DA27FF93E6005F8241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A2D927FF93E6005F8241 /* AppDelegate.swift */; };
 		51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D527FF769A003F7989 /* ContentViews.swift */; };
 		51FDB1D827FF769A003F7989 /* MainNavigationHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -39,13 +33,7 @@
 		043D64FF72628C29D3EB34C2 /* Pods-HierarchyUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Tests/Pods-HierarchyUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1B35161D6DCF9BE6A490DDC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D743F0E35C5E098EC329270 /* Pods-HierarchyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HierarchyUI_Example.release.xcconfig"; path = "Target Support Files/Pods-HierarchyUI_Example/Pods-HierarchyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		51FDB1BE27FF7639003F7989 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../LadderUI/Example/LadderUI/AppDelegate.swift; sourceTree = "<group>"; };
-		51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRoute.swift; sourceTree = "<group>"; };
-		51FDB1CA27FF7678003F7989 /* HostingControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingControllers.swift; sourceTree = "<group>"; };
-		51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRouteRenderer.swift; sourceTree = "<group>"; };
-		51FDB1CC27FF7678003F7989 /* View+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Route.swift"; sourceTree = "<group>"; };
-		51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyNavigator.swift; sourceTree = "<group>"; };
-		51FDB1CE27FF7678003F7989 /* Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hierarchy.swift; sourceTree = "<group>"; };
+		5102A2D927FF93E6005F8241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FDB1D527FF769A003F7989 /* ContentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
 		51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationHierarchy.swift; sourceTree = "<group>"; };
 		5D72D2965A588A86EE39C6B7 /* HierarchyUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HierarchyUI.podspec; path = ../HierarchyUI.podspec; sourceTree = "<group>"; };
@@ -81,40 +69,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51FDB1C027FF7664003F7989 /* HierarchyUI */ = {
-			isa = PBXGroup;
-			children = (
-				51FDB1C127FF7664003F7989 /* Classes */,
-				51FDB1C427FF7664003F7989 /* Assets */,
-			);
-			name = HierarchyUI;
-			path = ../HierarchyUI;
-			sourceTree = "<group>";
-		};
-		51FDB1C127FF7664003F7989 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				51FDB1CC27FF7678003F7989 /* View+Route.swift */,
-				51FDB1CE27FF7678003F7989 /* Hierarchy.swift */,
-				51FDB1C927FF7678003F7989 /* HierarchyRoute.swift */,
-				51FDB1CD27FF7678003F7989 /* HierarchyNavigator.swift */,
-				51FDB1CB27FF7678003F7989 /* HierarchyRouteRenderer.swift */,
-				51FDB1CA27FF7678003F7989 /* HostingControllers.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		51FDB1C427FF7664003F7989 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				51FDB1C027FF7664003F7989 /* HierarchyUI */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for HierarchyUI */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -136,12 +93,12 @@
 		607FACD21AFB9204008FA782 /* Example for HierarchyUI */ = {
 			isa = PBXGroup;
 			children = (
-				51FDB1BE27FF7639003F7989 /* AppDelegate.swift */,
 				51FDB1D527FF769A003F7989 /* ContentViews.swift */,
 				51FDB1D627FF769A003F7989 /* MainNavigationHierarchy.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				5102A2D927FF93E6005F8241 /* AppDelegate.swift */,
 			);
 			name = "Example for HierarchyUI";
 			path = HierarchyUI;
@@ -375,15 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51FDB1BF27FF7639003F7989 /* AppDelegate.swift in Sources */,
-				51FDB1D427FF7678003F7989 /* Hierarchy.swift in Sources */,
-				51FDB1D327FF7678003F7989 /* HierarchyNavigator.swift in Sources */,
-				51FDB1D127FF7678003F7989 /* HierarchyRouteRenderer.swift in Sources */,
+				5102A2DA27FF93E6005F8241 /* AppDelegate.swift in Sources */,
 				51FDB1D827FF769A003F7989 /* MainNavigationHierarchy.swift in Sources */,
-				51FDB1D027FF7678003F7989 /* HostingControllers.swift in Sources */,
-				51FDB1D227FF7678003F7989 /* View+Route.swift in Sources */,
 				51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */,
-				51FDB1CF27FF7678003F7989 /* HierarchyRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

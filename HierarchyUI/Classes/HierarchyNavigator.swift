@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class HierarchyNavigator: ObservableObject {
+public final class HierarchyNavigator: ObservableObject {
     private let onPush: (AnyHashable?) -> Void
     private let onModal: (AnyHashable?) -> Void
     private let onPop: (AnyHashable?) -> Void
@@ -28,23 +28,23 @@ final class HierarchyNavigator: ObservableObject {
         self.onDismiss = onDismiss
     }
 
-    func push(key: AnyHashable? = nil) {
+    public func push(key: AnyHashable? = nil) {
         onPush(key)
     }
     
-    func modal(key: AnyHashable? = nil) {
+    public func modal(key: AnyHashable? = nil) {
         onModal(key)
     }
     
-    func pop(key: AnyHashable? = nil) {
+    public func pop(key: AnyHashable? = nil) {
         onPop(key)
     }
     
-    func replace(key: AnyHashable? = nil) {
+    public func replace(key: AnyHashable? = nil) {
         onReplace(key)
     }
     
-    func dismiss() {
+    public func dismiss() {
         onDismiss()
     }
 }

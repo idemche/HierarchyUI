@@ -5,7 +5,7 @@
 //  Created by Ihor Demchenko on 04.04.2022.
 //
 
-import Foundation
+import HierarchyUI
 
 struct MainNavigationHierarchy: NavigationHierarchy {
     func structure() -> NavigationHierarchyRoute {

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension View {
-    func route<Key: Hashable>(key: Key) -> NavigationHierarchyRoute {
+public extension View {
+    public func route<Key: Hashable>(key: Key) -> NavigationHierarchyRoute {
         return NavigationHierarchyRoute(key: key, root: { AnyView(self) })
     }
 }

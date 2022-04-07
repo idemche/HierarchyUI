@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HierarchyUI'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HierarchyUI.'
+  s.summary          = 'Implementation of declarative UIKit application navigation for SwiftUI.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  SwiftUI is a declarative UI layouting framework.
+  HierarchyUI is a declarative Navigation construction framework.
+
+  As Apple states in its official documentation:
+  SwiftUI uses a declarative syntax, so you can simply state what your user interface should do.
+  For example, you can write that you want a list of items consisting of text fields,
+  then describe alignment, font, and color for each field.
+  Your code is simpler and easier to read than ever before, saving you time and maintenance.
+
+  SwiftUI's implementation implies that Navigation is embedded into UI layout, within NavigationLink.
+  That creates some limitation in terms of different architectures which tend to separate UI from business
+  and navigation logic.
+
+  HierarchyUI provides a way to create a readable and simple way to create a declarative Navigation structure
+  separately, without mixing it with UI.
+  DESC
 
   s.homepage         = 'https://github.com/idemche/HierarchyUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,6 +42,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/idemche/HierarchyUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'HierarchyUI/Classes/**/*'

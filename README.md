@@ -64,8 +64,9 @@ struct MainNavigationHierarchy: NavigationHierarchy {
     <td width="30%"><div class="highlight highlight-source-swift"><pre>
  @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
-     var window: UIWindow?
      
+     var window: UIWindow?
+
      lazy var hierarchyRenderer = NavigationHierarchyRouteRenderer()
 
      func application(

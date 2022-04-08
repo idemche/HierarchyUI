@@ -25,7 +25,7 @@ HierarchyUI provides a way to create a readable and simple way to create a decla
 separately, without mixing it with UI.
 
 
-## Usage
+## Create Navigation Structure
 
 Let us consider you have several `View`s:
 
@@ -64,7 +64,6 @@ struct MainNavigationHierarchy: NavigationHierarchy {
     <td width="30%"><div class="highlight highlight-source-swift"><pre>
  @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
-
      var window: UIWindow?
      
      lazy var hierarchyRenderer = NavigationHierarchyRouteRenderer()
@@ -84,15 +83,76 @@ struct MainNavigationHierarchy: NavigationHierarchy {
          window?.makeKeyAndVisible()
 
          return true
-     }</pre></div></td>
+     }
+}</pre></div></td>
   </tr>
 </table>
 
 where `.route(key: AnyHashable)` creates a route in `NavigationHierarchy`, and `.pushes {}` method of
 View/NavigationHierarchyRoute determines which `View` is going to be pushed next from destination `View`.
 
+## Control Navigation
 
+To control Navigation, you need to declare Navigation EnvironmentObject inside your `View`.
 
+<table>
+  <tr>
+    <th width="30%">Navigation Example</th>
+    <th width="30%">How it looks</th>
+  </tr>
+  <tr>
+    <td>Create a `View` with EnvironmentObject</td>
+    <th rowspan="9"><img src="https://github.com/idemche/HierarchyUI/blob/main/docs/images/2.gif?raw=true"></th>
+  </tr>
+  <tr>
+    <td><div class="higghlight highlight-source-swift"><pre>
+struct View1: View {    
+    @EnvironmentObject
+    var navigation: HierarchyNavigator
+    
+    var body: some View {
+        Button(
+        action: {},
+        label: {
+            Text("1")
+                .frame(
+                    width: 100,
+                    height: 100,
+                    alignment: .center
+                )
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
+    }
+}
+</pre></div></td>
+  </tr>
+  <tr>
+    <td> And then invoke push method</td>
+  </tr>
+  <tr>
+    <td width="30%"><div class="highlight highlight-source-swift"><pre>
+ struct View1: View {
+    @EnvironmentObject
+    var navigation: HierarchyNavigator
+    
+    var body: some View {
+        Button(action: {
+            navigation.push()
+        }, label: {
+            Text("1")
+                .frame(
+                    width: 100,
+                    height: 100,
+                    alignment: .center
+                )
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
+    }
+}</pre></div></td>
+  </tr>
+</table> 
 
 
 ## Requirements

@@ -156,7 +156,71 @@ struct View1: View {
 </table> 
 
 
+## Example
+
+```swift
+
+/// Startup
+struct AppStartupNavigationHierarchy: NavigationHierarchy {
+    func structure() -> NavigationHierarchyRoute {
+        SplashLoadingView().route(key: "Splash").pushes {
+            [
+                MainScreenNavigationHierarchy().structure()
+                AuthorizationFlowNavigationHierarchy().structure(),
+            ]
+        }
+    }
+}
+
+/// Authorization Flow
+struct AuthorizationFlowNavigationHierarchy: NavigationHierarchy {
+    func structure() -> NavigationHierarchyRoute {
+        LandingView().route(key: "Landing").pushes {
+            LoginView().route(key: "Login").pushes {
+                PasswordView().route(key: "Password").replaces {
+                    MainTabBarView().route(key: "MainTabBar")
+                }
+            }
+        }
+    }
+}
+
+/// Main Screen
+struct MainScreenNavigationHierarchy: NavigationHierarchy {
+    func structure() -> NavigationHierarchyRoute {
+        MainTabBarView().route(key: "Main").pushes {
+            [
+                NewsListView().route(key: "NewsList").pushes {
+                    [
+                        BannerDetailsView().route(key: "BannerDetailsView")
+                        NewsDetailsView().route(key: "NewsDetailsView"),
+                    ]
+                },
+                RecommendationsListView().route(key: "RecommendationsListView").pushes {
+                    [
+                        GardeningListView().route(key: "NewsDetailsView"),
+                        PoliticsListView().route(key: "BannerDetailsView"),
+                        PoliticsListView().route(key: "BannerDetailsView"),
+                    ]
+                }
+                UserProfileView().route(key: "UserProfile").pushes {
+                    [
+                        UserCredentialsInformationView(key: "UserCredentialsInformationView"),
+                        UserResidenceInformationView(key: "UserResidenceInformationView"),
+                        UserPhoneInformationView(key: "UserPhoneInformationView"),
+                        UserSettingsInformationView(key: "UserSettingsView")
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
 ## Requirements
+
+Swift 5.x
+iOS 13.0+
 
 ## Installation
 

@@ -24,7 +24,74 @@ and navigation logic.
 HierarchyUI provides a way to create a readable and simple way to create a declarative Navigation structure
 separately, without mixing it with UI.
 
-## Example
+
+## Usage
+
+Let us consider you have several `View`s:
+
+ContentView1 ContentView2 ContentView3
+
+And you need to organize them into simple push/pop navigation stack.
+
+For that, you need to create a separate `NavigationHierarchy`:
+
+<table>
+  <tr>
+    <th width="30%">Here's an example</th>
+    <th width="30%">Here's the initial rendering result</th>
+  </tr>
+  <tr>
+    <td>Create a `NavigationHierarchy`</td>
+    <th rowspan="9"><img src="https://raw.githubusercontent.com/idemche/HierarchyUI/main/docs/images/1.png"></th>
+  </tr>
+  <tr>
+    <td><div class="highlight highlight-source-swift"><pre>
+struct MainNavigationHierarchy: NavigationHierarchy {
+    func structure() -> NavigationHierarchyRoute {
+        View1().route(key: "1").pushes {
+            View2().route(key: "2").pushes {
+                View3().route(key: "3")
+            }
+        }
+    }
+}
+</pre></div></td>
+  </tr>
+  <tr>
+    <td> and then render this hierarchy within AppDelegate</td>
+  </tr>
+  <tr>
+    <td width="30%"><div class="highlight highlight-source-swift"><pre>
+ @UIApplicationMain
+ class AppDelegate: UIResponder, UIApplicationDelegate {
+
+     var window: UIWindow?
+     
+     lazy var hierarchyRenderer = NavigationHierarchyRouteRenderer()
+
+     func application(
+         _ application: UIApplication,
+         didFinishLaunchingWithOptions
+         launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+     ) -> Bool {
+
+         self.window = UIWindow()
+
+         let mainHierarchy = MainNavigationHierarchy()
+         window?.rootViewController = hierarchyRenderer
+            .render(hierarchy: mainHierarchy)
+
+         window?.makeKeyAndVisible()
+
+         return true
+     }</pre></div></td>
+  </tr>
+</table>
+
+where `.route(key: AnyHashable)` creates a route in `NavigationHierarchy`, and `.pushes {}` method of
+View/NavigationHierarchyRoute determines which `View` is going to be pushed next from destination `View`.
+
+
 
 
 

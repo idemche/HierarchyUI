@@ -44,7 +44,7 @@ struct ContentView2: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.yellow)
         Button(action: {
             navigation.modal()
         }, label: {
@@ -75,7 +75,7 @@ struct ContentView3: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.blue)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -98,7 +98,7 @@ struct ContentView4: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.red)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -121,7 +121,7 @@ struct ContentView5: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.purple)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -144,7 +144,7 @@ struct ContentView6: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.black)
         Button(action: {
             navigation.pop()
         }, label: {

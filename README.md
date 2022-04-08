@@ -8,9 +8,25 @@
 <a href="https://github.com/apple/swift-package-manager" alt="HierarchyUI on Swift Package Manager" title="HierarchyUI on Swift Package Manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" /></a>
 </p>
 
+SwiftUI is a declarative UI layouting framework.
+HierarchyUI is a declarative UI navigation construction framework.
+
+As Apple states in its official documentation:
+SwiftUI uses a declarative syntax, so you can simply state what your user interface should do.
+For example, you can write that you want a list of items consisting of text fields,
+then describe alignment, font, and color for each field.
+Your code is simpler and easier to read than ever before, saving you time and maintenance.
+
+SwiftUI's implementation implies that Navigation is embedded into UI layout, within NavigationLink.
+That creates some limitation in terms of different architectures which tend to separate UI from business
+and navigation logic.
+
+HierarchyUI provides a way to create a readable and simple way to create a declarative Navigation structure
+separately, without mixing it with UI.
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ## Requirements
 

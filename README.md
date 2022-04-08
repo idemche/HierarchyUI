@@ -29,7 +29,7 @@ separately, without mixing it with UI.
 
 Let us consider you have several `View`s:
 
-ContentView1 ContentView2 ContentView3
+View1 View2 View3
 
 And you need to organize them into simple push/pop navigation stack.
 

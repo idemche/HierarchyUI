@@ -3,6 +3,7 @@
 //  HierarchyUI
 //
 //  Created by Ihor Demchenko on 02.04.2022.
+//  Copyright © 2022 Ihor Demchenko. All rights reserved.
 //
 
 import SwiftUI
@@ -14,7 +15,9 @@ struct ContentView1: View {
     
     var body: some View {
         Button(action: {
-            navigation.push()
+            navigation.push(
+                settings: .init(hidesBottomBarWhenPushed: true)
+            )
         }, label: {
             Text("1")
                 .frame(width: 100, height: 100, alignment: .center)
@@ -167,7 +170,7 @@ struct ContentView7: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.red)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -190,7 +193,7 @@ struct ContentView8: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.orange)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -213,7 +216,7 @@ struct ContentView9: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.gray)
         Button(action: {
             navigation.pop()
         }, label: {
@@ -260,7 +263,7 @@ struct ContentView11: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.red)
         Button(action: {
             navigation.replace()
         }, label: {
@@ -268,7 +271,7 @@ struct ContentView11: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
-        .background(Color.green)
+        .background(Color.blue)
         Button(action: {
             navigation.pop()
         }, label: {

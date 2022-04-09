@@ -3,12 +3,13 @@
 //  HierarchyUI
 //
 //  Created by Ihor Demchenko on 04.04.2022.
+//  Copyright © 2022 Ihor Demchenko. All rights reserved.
 //
 
 import SwiftUI
 
 public extension View {
-    public func route<Key: Hashable>(key: Key) -> NavigationHierarchyRoute {
-        return NavigationHierarchyRoute(key: key, root: { AnyView(self) })
+    func route<Key: Hashable>(key: Key) -> NavigationHierarchyRoute {
+        return NavigationHierarchyRoute(key: key, type: .screen(provider: { AnyView(self) }))
     }
 }

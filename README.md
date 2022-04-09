@@ -187,32 +187,41 @@ struct AuthorizationFlowNavigationHierarchy: NavigationHierarchy {
 
 /// Main Screen
 struct MainScreenNavigationHierarchy: NavigationHierarchy {
-    func structure() -> NavigationHierarchyRoute {
-        MainTabBarView().route(key: "Main").pushes {
-            [
-                NewsListView().route(key: "NewsList").pushes {
-                    [
-                        BannerDetailsView().route(key: "BannerDetailsView")
-                        NewsDetailsView().route(key: "NewsDetailsView"),
-                    ]
-                },
-                RecommendationsListView().route(key: "RecommendationsListView").pushes {
-                    [
-                        GardeningListView().route(key: "NewsDetailsView"),
-                        PoliticsListView().route(key: "BannerDetailsView"),
-                        PoliticsListView().route(key: "BannerDetailsView"),
-                    ]
+     func structure() -> NavigationHierarchyRoute {
+        TabBarHierarchyBuilder(key: "MainTabBar", initialTabIndex: 0)
+            .tab(tabBarSystemItem: .bookmarks) {
+                BookmarksView().route("Bookmarks").pushes {
+                    BookmarksDetailsView().route("BookmarksDetails")
                 }
-                UserProfileView().route(key: "UserProfile").pushes {
-                    [
-                        UserCredentialsInformationView(key: "UserCredentialsInformationView"),
-                        UserResidenceInformationView(key: "UserResidenceInformationView"),
-                        UserPhoneInformationView(key: "UserPhoneInformationView"),
-                        UserSettingsInformationView(key: "UserSettingsView")
-                    ]
+                .modals {
+                    BookmarksTutorialView().route("Bookmarks Tutorial View")
                 }
-            ]
-        }
+            }
+            .tab(tabBarSystemItem: .contacts) {
+                 ContactsView().route("Contacts").pushes {
+                    ContactsDetailsView().route("ContactsDetails")
+                }
+                .modals {
+                    ContactsTutorialView().route("Contacts Tutorial View")
+                }
+            }
+            .tab(tabBarSystemItem: .downloads) {
+                 DownloadsView().route("Downloads").pushes {
+                    DownloadsDetailsView().route("DownloadsDetails")
+                }
+                .modals {
+                    DownloadsTutorialView().route("Downloads Tutorial View")
+                }
+            }
+            .tab(tabBarSystemItem: .favorites) {
+                FavoritesView().route("Favorites").pushes {
+                    FavoritesDetailsView().route("FavoritesDetails")
+                }
+                .modals {
+                    FavoritesTutorialView().route("Favorites Tutorial View")
+                }
+            }
+            .build()
     }
 }
 ```

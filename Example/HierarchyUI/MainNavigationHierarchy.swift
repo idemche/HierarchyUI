@@ -3,6 +3,7 @@
 //  HierarchyUI
 //
 //  Created by Ihor Demchenko on 04.04.2022.
+//  Copyright © 2022 Ihor Demchenko. All rights reserved.
 //
 
 import HierarchyUI
@@ -20,7 +21,7 @@ struct MainNavigationHierarchy: NavigationHierarchy {
                                     ContentView9().route(key: "9").pushes {
                                         ContentView10().route(key: "10").pushes {
                                             ContentView11().route(key: "11").replaces {
-                                                MainNavigationHierarchy().structure()
+                                                TabBarHierarchy().structure()
                                             }
                                         }
                                     }

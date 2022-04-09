@@ -3,19 +3,24 @@
 //  HierarchyUI
 //
 //  Created by Ihor Demchenko on 04.04.2022.
-//  Copyright © 2022 CocoaPods. All rights reserved.
+//  Copyright © 2022 Ihor Demchenko. All rights reserved.
 //
 
 import SwiftUI
 
-extension NavigationHierarchyRoute: Equatable {
-    public static func == (lhs: NavigationHierarchyRoute, rhs: NavigationHierarchyRoute) -> Bool {
-        return lhs.key == rhs.key
+enum HierarchyRouteType {
+    case screen(provider: () -> AnyView)
+    case tabBar(hierarchy: TabBarHierarchyBuilder)
+    
+    var hasChildViewRoutes: Bool {
+        switch self {
+        case .screen: return false
+        case .tabBar: return true
+        }
     }
 }
 
 public final class NavigationHierarchyRoute {
-
     /// Push stack navigation and management
     /// =======================================================
     internal var previousRoute: NavigationHierarchyRoute?
@@ -24,7 +29,7 @@ public final class NavigationHierarchyRoute {
 
     /// Modals navigation and management
     /// =======================================================
-    internal weak var parent: NavigationHierarchyRoute?
+    internal weak var modalParentRoute: NavigationHierarchyRoute?
     internal var modals: () -> [AnyHashable: NavigationHierarchyRoute] = { [:] }
     /// =======================================================
 
@@ -33,95 +38,26 @@ public final class NavigationHierarchyRoute {
     internal var replacers: () -> [AnyHashable: NavigationHierarchyRoute] = { [:] }
     /// =======================================================
 
+    /// Child navigation and management
+    /// =======================================================
+    internal weak var parentContainerRoute: NavigationHierarchyRoute?
+    /// =======================================================
+
     /// Storable view provider properties
     /// =======================================================
     internal let key: AnyHashable
-    internal let rootViewProvider: () -> AnyView
+    internal let type: HierarchyRouteType
     /// =======================================================
     
     /// UIKit bridge
     /// =======================================================
-    internal weak var parentHostingController: UIViewController?
+
+    /// Hosting controller which owns current root view.
+    internal weak var ownerHostingController: UIViewController?
     /// =======================================================
 
-    internal init<V: View>(key: AnyHashable, root: @escaping () -> V) {
+    internal init(key: AnyHashable, type: HierarchyRouteType) {
         self.key = key
-        self.rootViewProvider = { AnyView(root()) }
-    }
-
-    public func pushes(anotherRouteProvider: @escaping () -> NavigationHierarchyRoute) -> NavigationHierarchyRoute {
-        assert(nextRoute().isEmpty)
-        nextRoute = { [weak self] in
-            assert(self != nil)
-            let anotherRoute: NavigationHierarchyRoute = anotherRouteProvider()
-            anotherRoute.previousRoute = self
-            anotherRoute.parent = self?.parent
-            return [anotherRoute.key: anotherRoute]
-        }
-        return self
-    }
-
-    public func pushes(anotherRoutesProvider: @escaping () -> [NavigationHierarchyRoute]) -> NavigationHierarchyRoute {
-        assert(nextRoute().isEmpty)
-        nextRoute = { [weak self] in
-            assert(self != nil)
-            return anotherRoutesProvider().reduce([:]) { (accumulator: [AnyHashable: NavigationHierarchyRoute], route) in
-                var accumulator = accumulator
-                accumulator[route.key] = route
-                route.previousRoute = self
-                route.parent = self?.parent
-                return accumulator
-            }
-        }
-        return self
-    }
-    
-    public func modals(anotherModalProvider: @escaping () -> NavigationHierarchyRoute) -> NavigationHierarchyRoute {
-        assert(modals().isEmpty)
-        assert(parent == nil, "You cannot present modally inside of the other modal screen.")
-        modals = { [weak self] in
-            assert(self != nil)
-            let anotherRoute: NavigationHierarchyRoute = anotherModalProvider()
-            anotherRoute.parent = self
-            return [anotherRoute.key: anotherRoute]
-        }
-        return self
-    }
-    
-    public func modals(anotherModalProvider: @escaping () -> [NavigationHierarchyRoute]) -> NavigationHierarchyRoute {
-        assert(modals().isEmpty)
-        assert(parent == nil, "You cannot present modally inside of the other modal screen.")
-        modals = { [weak self] in
-            return anotherModalProvider().reduce([:]) { accumulator, route in
-                var accumulator = accumulator
-                accumulator[route.key] = route
-                route.previousRoute = self
-                route.parent = self
-                return accumulator
-            }
-        }
-        return self
-    }
-    
-    public func replaces(anotherReplacerProvider: @escaping () -> NavigationHierarchyRoute) -> NavigationHierarchyRoute {
-        assert(replacers().isEmpty)
-        replacers = {
-            let anotherReplacer: NavigationHierarchyRoute = anotherReplacerProvider()
-            return [anotherReplacer.key: anotherReplacer]
-        }
-        return self
-    }
-
-    public func replaces(anotherReplacerProvider: @escaping () -> [NavigationHierarchyRoute]) -> NavigationHierarchyRoute {
-        assert(replacers().isEmpty)
-        replacers = {
-            return anotherReplacerProvider().reduce([:]) { accumulator, route in
-                var accumulator = accumulator
-                accumulator[route.key] = route
-                route.previousRoute = nil
-                return accumulator
-            }
-        }
-        return self
+        self.type = type
     }
 }

@@ -3,48 +3,35 @@
 //  HierarchyUI
 //
 //  Created by Ihor Demchenko on 04.04.2022.
+//  Copyright © 2022 Ihor Demchenko. All rights reserved.
 //
 
 import SwiftUI
 
 public final class HierarchyNavigator: ObservableObject {
-    private let onPush: (AnyHashable?) -> Void
-    private let onModal: (AnyHashable?) -> Void
-    private let onPop: (AnyHashable?) -> Void
-    private let onReplace: (AnyHashable?) -> Void
-    private let onDismiss: () -> Void
+    private let onNavigationEvent: (NavigationHierarchyNavigationEvent) -> Void
     
-    init(
-        onPush: @escaping (AnyHashable?) -> Void,
-        onModal: @escaping (AnyHashable?) -> Void,
-        onPop: @escaping (AnyHashable?) -> Void,
-        onReplace: @escaping (AnyHashable?) -> Void,
-        onDismiss: @escaping () -> Void
-    ) {
-        self.onPush = onPush
-        self.onModal = onModal
-        self.onPop = onPop
-        self.onReplace = onReplace
-        self.onDismiss = onDismiss
+    init(onNavigationEvent: @escaping (NavigationHierarchyNavigationEvent) -> Void) {
+        self.onNavigationEvent = onNavigationEvent
     }
 
-    public func push(key: AnyHashable? = nil) {
-        onPush(key)
+    public func push(key: AnyHashable? = nil, settings: PushSettings = .default) {
+        self.onNavigationEvent(.push(key: key, settings: settings))
     }
     
-    public func modal(key: AnyHashable? = nil) {
-        onModal(key)
+    public func modal(key: AnyHashable? = nil, settings: ModalSettings = .default) {
+        self.onNavigationEvent(.modal(key: key, settings: settings))
     }
     
     public func pop(key: AnyHashable? = nil) {
-        onPop(key)
+        self.onNavigationEvent(.pop(key: key))
     }
     
     public func replace(key: AnyHashable? = nil) {
-        onReplace(key)
+        self.onNavigationEvent(.replace(key: key))
     }
     
     public func dismiss() {
-        onDismiss()
+        self.onNavigationEvent(.dismiss)
     }
 }

@@ -178,7 +178,7 @@ struct AuthorizationFlowNavigationHierarchy: NavigationHierarchy {
         LandingView().route(key: "Landing").pushes {
             LoginView().route(key: "Login").pushes {
                 PasswordView().route(key: "Password").replaces {
-                    MainTabBarView().route(key: "MainTabBar")
+                    MainScreenNavigationHierarchy().structure()
                 }
             }
         }

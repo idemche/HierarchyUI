@@ -18,6 +18,8 @@ public final class TabBarHierarchy {
     internal let key: AnyHashable
     internal var tabs: [TabBarHierarchyTabProperties] = []
     
+    private let maxAvailableTabs: Int = 6
+
     internal var currentlySelectedIndex: Int = 0
 
     internal var currentTabRoute: NavigationHierarchyRoute {
@@ -90,6 +92,7 @@ public final class TabBarHierarchy {
             TabBar selectedIndex will be reset to zero.
             """
         )
+        assert(tabs.count < maxAvailableTabs, "Tabs count cannot exceed \(maxAvailableTabs) for now.")
         return NavigationHierarchyRoute(
             key: key,
             type: .tabBar(hierarchy: self)

@@ -376,13 +376,3 @@ struct View14: View {
         .background(Color.green)
     }
 }
-
-struct ViewReplacer: View {
-    @EnvironmentObject var navigation: HierarchyNavigator
-
-    var body: some View {
-        Text("Replaced")
-            .foregroundColor(Color.white)
-            .background(Color.green)
-    }
-}

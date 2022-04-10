@@ -11,20 +11,23 @@
 		5102A2DA27FF93E6005F8241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102A2D927FF93E6005F8241 /* AppDelegate.swift */; };
 		511EEBA62800AB7000E90115 /* HierarchyRouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9A2800AB7000E90115 /* HierarchyRouteRenderer.swift */; };
 		511EEBA72800AB7000E90115 /* HierarchyRoute+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9B2800AB7000E90115 /* HierarchyRoute+Builder.swift */; };
-		511EEBA92800AB7000E90115 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9D2800AB7000E90115 /* HostingController.swift */; };
+		511EEBA92800AB7000E90115 /* HostingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9D2800AB7000E90115 /* HostingControllerProxy.swift */; };
 		511EEBAA2800AB7000E90115 /* HierarchyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9E2800AB7000E90115 /* HierarchyNavigator.swift */; };
 		511EEBAB2800AB7000E90115 /* View+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEB9F2800AB7000E90115 /* View+Route.swift */; };
 		511EEBAC2800AB7000E90115 /* TabBarHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBA12800AB7000E90115 /* TabBarHierarchy.swift */; };
 		511EEBAD2800AB7000E90115 /* Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBA22800AB7000E90115 /* Hierarchy.swift */; };
 		511EEBAE2800AB7000E90115 /* HierarchyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBA32800AB7000E90115 /* HierarchyRoute.swift */; };
 		511EEBAF2800AB7000E90115 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 511EEBA52800AB7000E90115 /* .gitkeep */; };
-		511EEBB42800D85F00E90115 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB32800D85F00E90115 /* TabBarController.swift */; };
-		511EEBB62800D8F000E90115 /* EventNotifyingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB52800D8F000E90115 /* EventNotifyingController.swift */; };
+		511EEBB42800D85F00E90115 /* TabBarControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB32800D85F00E90115 /* TabBarControllerProxy.swift */; };
+		511EEBB62800D8F000E90115 /* EventNotifyingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB52800D8F000E90115 /* EventNotifyingControllerProxy.swift */; };
 		511EEBB82800E51400E90115 /* HierarchyRoute+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB72800E51400E90115 /* HierarchyRoute+Equatable.swift */; };
 		511EEBBA2800EAF100E90115 /* TabBarHierarchy+Hosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBB92800EAF100E90115 /* TabBarHierarchy+Hosting.swift */; };
 		511EEBBC2800ED0800E90115 /* ExampleTabBarHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBBB2800ED0800E90115 /* ExampleTabBarHierarchy.swift */; };
 		511EEBBF280206BB00E90115 /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBBE280206BB00E90115 /* WeakReference.swift */; };
-		511EEBC1280334DB00E90115 /* TabContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBC0280334DB00E90115 /* TabContentViews.swift */; };
+		511EEBC32803468A00E90115 /* TabContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBC22803468A00E90115 /* TabContentViews.swift */; };
+		511EEBC528035AC500E90115 /* HierarchyGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBC428035AC500E90115 /* HierarchyGraphManager.swift */; };
+		511EEBC728035AF800E90115 /* HierarchyHostingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBC628035AF800E90115 /* HierarchyHostingManager.swift */; };
+		511EEBC9280361B300E90115 /* NavigationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511EEBC8280361B300E90115 /* NavigationControllerProxy.swift */; };
 		51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D527FF769A003F7989 /* ContentViews.swift */; };
 		51FDB1D827FF769A003F7989 /* ExampleMainNavigationHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDB1D627FF769A003F7989 /* ExampleMainNavigationHierarchy.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -52,20 +55,23 @@
 		5102A2D927FF93E6005F8241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		511EEB9A2800AB7000E90115 /* HierarchyRouteRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRouteRenderer.swift; sourceTree = "<group>"; };
 		511EEB9B2800AB7000E90115 /* HierarchyRoute+Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HierarchyRoute+Builder.swift"; sourceTree = "<group>"; };
-		511EEB9D2800AB7000E90115 /* HostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		511EEB9D2800AB7000E90115 /* HostingControllerProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingControllerProxy.swift; sourceTree = "<group>"; };
 		511EEB9E2800AB7000E90115 /* HierarchyNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyNavigator.swift; sourceTree = "<group>"; };
 		511EEB9F2800AB7000E90115 /* View+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Route.swift"; sourceTree = "<group>"; };
 		511EEBA12800AB7000E90115 /* TabBarHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHierarchy.swift; sourceTree = "<group>"; };
 		511EEBA22800AB7000E90115 /* Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hierarchy.swift; sourceTree = "<group>"; };
 		511EEBA32800AB7000E90115 /* HierarchyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyRoute.swift; sourceTree = "<group>"; };
 		511EEBA52800AB7000E90115 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		511EEBB32800D85F00E90115 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		511EEBB52800D8F000E90115 /* EventNotifyingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNotifyingController.swift; sourceTree = "<group>"; };
+		511EEBB32800D85F00E90115 /* TabBarControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerProxy.swift; sourceTree = "<group>"; };
+		511EEBB52800D8F000E90115 /* EventNotifyingControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNotifyingControllerProxy.swift; sourceTree = "<group>"; };
 		511EEBB72800E51400E90115 /* HierarchyRoute+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HierarchyRoute+Equatable.swift"; sourceTree = "<group>"; };
 		511EEBB92800EAF100E90115 /* TabBarHierarchy+Hosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarHierarchy+Hosting.swift"; sourceTree = "<group>"; };
 		511EEBBB2800ED0800E90115 /* ExampleTabBarHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTabBarHierarchy.swift; sourceTree = "<group>"; };
 		511EEBBE280206BB00E90115 /* WeakReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
-		511EEBC0280334DB00E90115 /* TabContentViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentViews.swift; sourceTree = "<group>"; };
+		511EEBC22803468A00E90115 /* TabContentViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentViews.swift; sourceTree = "<group>"; };
+		511EEBC428035AC500E90115 /* HierarchyGraphManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchyGraphManager.swift; sourceTree = "<group>"; };
+		511EEBC628035AF800E90115 /* HierarchyHostingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchyHostingManager.swift; sourceTree = "<group>"; };
+		511EEBC8280361B300E90115 /* NavigationControllerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerProxy.swift; sourceTree = "<group>"; };
 		51FDB1D527FF769A003F7989 /* ContentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
 		51FDB1D627FF769A003F7989 /* ExampleMainNavigationHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleMainNavigationHierarchy.swift; sourceTree = "<group>"; };
 		5D72D2965A588A86EE39C6B7 /* HierarchyUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HierarchyUI.podspec; path = ../HierarchyUI.podspec; sourceTree = "<group>"; };
@@ -115,8 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				511EEBBD280206B000E90115 /* Utilities */,
-				511EEBB02800BF8100E90115 /* UIKitWrappers */,
+				511EEBB02800BF8100E90115 /* UIKitProxies */,
 				511EEBA02800AB7000E90115 /* Components */,
+				511EEBC628035AF800E90115 /* HierarchyHostingManager.swift */,
+				511EEBC428035AC500E90115 /* HierarchyGraphManager.swift */,
 				511EEB9A2800AB7000E90115 /* HierarchyRouteRenderer.swift */,
 				511EEB9E2800AB7000E90115 /* HierarchyNavigator.swift */,
 				511EEBA32800AB7000E90115 /* HierarchyRoute.swift */,
@@ -145,14 +153,15 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		511EEBB02800BF8100E90115 /* UIKitWrappers */ = {
+		511EEBB02800BF8100E90115 /* UIKitProxies */ = {
 			isa = PBXGroup;
 			children = (
-				511EEBB52800D8F000E90115 /* EventNotifyingController.swift */,
-				511EEB9D2800AB7000E90115 /* HostingController.swift */,
-				511EEBB32800D85F00E90115 /* TabBarController.swift */,
+				511EEBB32800D85F00E90115 /* TabBarControllerProxy.swift */,
+				511EEB9D2800AB7000E90115 /* HostingControllerProxy.swift */,
+				511EEBC8280361B300E90115 /* NavigationControllerProxy.swift */,
+				511EEBB52800D8F000E90115 /* EventNotifyingControllerProxy.swift */,
 			);
-			path = UIKitWrappers;
+			path = UIKitProxies;
 			sourceTree = "<group>";
 		};
 		511EEBBD280206B000E90115 /* Utilities */ = {
@@ -190,7 +199,7 @@
 			children = (
 				5102A2D927FF93E6005F8241 /* AppDelegate.swift */,
 				51FDB1D527FF769A003F7989 /* ContentViews.swift */,
-				511EEBC0280334DB00E90115 /* TabContentViews.swift */,
+				511EEBC22803468A00E90115 /* TabContentViews.swift */,
 				511EEBBB2800ED0800E90115 /* ExampleTabBarHierarchy.swift */,
 				51FDB1D627FF769A003F7989 /* ExampleMainNavigationHierarchy.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -430,23 +439,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511EEBB62800D8F000E90115 /* EventNotifyingController.swift in Sources */,
+				511EEBC528035AC500E90115 /* HierarchyGraphManager.swift in Sources */,
+				511EEBB62800D8F000E90115 /* EventNotifyingControllerProxy.swift in Sources */,
+				511EEBC728035AF800E90115 /* HierarchyHostingManager.swift in Sources */,
 				511EEBAC2800AB7000E90115 /* TabBarHierarchy.swift in Sources */,
 				511EEBBC2800ED0800E90115 /* ExampleTabBarHierarchy.swift in Sources */,
 				511EEBAB2800AB7000E90115 /* View+Route.swift in Sources */,
-				511EEBA92800AB7000E90115 /* HostingController.swift in Sources */,
+				511EEBA92800AB7000E90115 /* HostingControllerProxy.swift in Sources */,
 				511EEBAA2800AB7000E90115 /* HierarchyNavigator.swift in Sources */,
 				511EEBA62800AB7000E90115 /* HierarchyRouteRenderer.swift in Sources */,
 				511EEBBF280206BB00E90115 /* WeakReference.swift in Sources */,
-				511EEBC1280334DB00E90115 /* TabContentViews.swift in Sources */,
+				511EEBC32803468A00E90115 /* TabContentViews.swift in Sources */,
 				511EEBBA2800EAF100E90115 /* TabBarHierarchy+Hosting.swift in Sources */,
 				5102A2DA27FF93E6005F8241 /* AppDelegate.swift in Sources */,
 				511EEBA72800AB7000E90115 /* HierarchyRoute+Builder.swift in Sources */,
 				511EEBB82800E51400E90115 /* HierarchyRoute+Equatable.swift in Sources */,
 				51FDB1D827FF769A003F7989 /* ExampleMainNavigationHierarchy.swift in Sources */,
 				51FDB1D727FF769A003F7989 /* ContentViews.swift in Sources */,
-				511EEBB42800D85F00E90115 /* TabBarController.swift in Sources */,
+				511EEBB42800D85F00E90115 /* TabBarControllerProxy.swift in Sources */,
 				511EEBAE2800AB7000E90115 /* HierarchyRoute.swift in Sources */,
+				511EEBC9280361B300E90115 /* NavigationControllerProxy.swift in Sources */,
 				511EEBAD2800AB7000E90115 /* Hierarchy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

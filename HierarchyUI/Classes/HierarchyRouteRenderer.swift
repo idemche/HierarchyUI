@@ -32,13 +32,13 @@ public final class NavigationHierarchyRouteRenderer {
         let hosting = hostingManager.renderInHostingController(route: route, embedding: navigator)
 
         switch route.type {
+        case .tabBar:
+            return hosting
         case .screen:
             let rootNavigationControllerProxy = NavigationControllerProxy(rootViewController: hosting)
             route.ownerHostingController = hosting
             route.rootNavigationRoute = route
             return rootNavigationControllerProxy
-        case .tabBar:
-            return hosting
         }
     }
 

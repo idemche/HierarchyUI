@@ -36,24 +36,16 @@ struct ExampleTabBarHierarchy: NavigationHierarchy {
                 }
             }
             .tab(tabBarSystemItem: .downloads) {
-                TabContentView1().route(key: "1").pushes {
-                    TabContentView5().route(key: "5").pushes {
-                        TabContentView6().route(key: "6").pushes {
-                            TabContentView7().route(key: "7").pushes {
-                                TabContentView8().route(key: "8")
-                            }
-                        }
+                TabContentView9().route(key: "9").pushes {
+                    TabContentView10().route(key: "10").pushes {
+                        TabContentView11().route(key: "11")
                     }
                 }
             }
             .tab(tabBarSystemItem: .favorites) {
-                TabContentView1().route(key: "1").pushes {
-                    TabContentView5().route(key: "5").pushes {
-                        TabContentView6().route(key: "6").pushes {
-                            TabContentView7().route(key: "7").pushes {
-                                TabContentView8().route(key: "8")
-                            }
-                        }
+                TabContentView15().route(key: "15").pushes {
+                    TabContentView16().route(key: "16").pushes {
+                        TabContentView17().route(key: "17")
                     }
                 }
             }

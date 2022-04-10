@@ -23,14 +23,6 @@ struct TabContentView1: View {
                 .foregroundColor(.white)
         })
         .background(Color.green)
-        Button(action: {
-            navigation.pop()
-        }, label: {
-            Text("pop")
-                .frame(width: 100, height: 100, alignment: .center)
-                .foregroundColor(.white)
-        })
-        .background(Color.green)
     }
 }
 
@@ -262,7 +254,6 @@ struct TabContentView14: View {
                 .foregroundColor(.white)
         })
         .background(Color.green)
-        .background(Color.green)
         Button(action: {
             navigation.dismiss()
         }, label: {
@@ -274,12 +265,124 @@ struct TabContentView14: View {
     }
 }
 
-struct ViewReplacer: View {
+struct TabContentView9: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
-        Text("Replaced")
-            .foregroundColor(Color.white)
-            .background(Color.green)
+        Button(action: {
+            navigation.push()
+        }, label: {
+            Text("9 to 10")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.blue)
+    }
+}
+
+struct TabContentView10: View {
+    @EnvironmentObject var navigation: HierarchyNavigator
+
+    var body: some View {
+        Button(action: {
+            navigation.push()
+        }, label: {
+            Text("10 to 11")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.gray)
+        Button(action: {
+            navigation.pop()
+        }, label: {
+            Text("Pop")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
+    }
+}
+
+struct TabContentView11: View {
+    @EnvironmentObject var navigation: HierarchyNavigator
+
+    var body: some View {
+        Button(action: {
+            navigation.popToRoot()
+        }, label: {
+            Text("Pop to root")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.black)
+        Button(action: {
+            navigation.pop()
+        }, label: {
+            Text("Pop")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
+    }
+}
+
+struct TabContentView15: View {
+    @EnvironmentObject var navigation: HierarchyNavigator
+
+    var body: some View {
+        Button(action: {
+            navigation.push()
+        }, label: {
+            Text("15 to 16")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.red)
+    }
+}
+
+struct TabContentView16: View {
+    @EnvironmentObject var navigation: HierarchyNavigator
+
+    var body: some View {
+        Button(action: {
+            navigation.push()
+        }, label: {
+            Text("16 to 17")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.yellow)
+        Button(action: {
+            navigation.pop()
+        }, label: {
+            Text("Pop")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
+    }
+}
+
+struct TabContentView17: View {
+    @EnvironmentObject var navigation: HierarchyNavigator
+
+    var body: some View {
+        Button(action: {
+            navigation.popToRoot()
+        }, label: {
+            Text("Pop to root")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.pink)
+        Button(action: {
+            navigation.pop()
+        }, label: {
+            Text("Pop")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.green)
     }
 }

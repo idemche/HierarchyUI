@@ -1,6 +1,6 @@
 //
-//  TabBarHierarchyBuilder+Hosting.swift
-//  HierarchyUI_Example
+//  TabBarHierarchy+Hosting.swift
+//  HierarchyUI
 //
 //  Created by Ihor Demchenko on 09.04.2022.
 //  Copyright © 2022 Ihor Demchenko. All rights reserved.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-extension TabBarHierarchyBuilder {
+extension TabBarHierarchy {
     /// Constructs TabBar through UIKit, attaches `TabBarItem`s and wraps it into UIHostingController.
     /// - Parameter navigator: EnvironmentObject that controls Navigation.
     /// - Returns: `NavigationEventNotifyingController` which is `ViewController` that notifies
@@ -33,6 +33,7 @@ extension TabBarHierarchyBuilder {
                     )
                     hosting.tabBarItem = tab.item
                     tab.route.ownerHostingController = hosting
+                    tab.route.rootNavigationRoute = tab.route
                     tab.route.parentContainerRoute = parentContainerRoute
                     return UINavigationController(rootViewController: hosting)
                 case .screen:
@@ -50,6 +51,7 @@ extension TabBarHierarchyBuilder {
                 }
             }
         tabBarController.viewControllers = hostingControllers
+        tabBarController.selectedIndex = currentlySelectedIndex
         return tabBarController
     }
 }

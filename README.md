@@ -188,7 +188,7 @@ struct AuthorizationFlowNavigationHierarchy: NavigationHierarchy {
 /// Main Screen
 struct MainScreenNavigationHierarchy: NavigationHierarchy {
      func structure() -> NavigationHierarchyRoute {
-        TabBarHierarchyBuilder(key: "MainTabBar", initialTabIndex: 0)
+        TabBarHierarchy(key: "MainTabBar", initialTabIndex: 0)
             .tab(tabBarSystemItem: .bookmarks) {
                 BookmarksView().route("Bookmarks").pushes {
                     BookmarksDetailsView().route("BookmarksDetails")

@@ -23,6 +23,8 @@ public extension NavigationHierarchyRoute {
             let anotherRoute: NavigationHierarchyRoute = anotherRouteProvider()
             anotherRoute.previousRoute = self
             anotherRoute.modalParentRoute = self?.modalParentRoute
+            anotherRoute.parentContainerRoute = self?.parentContainerRoute
+            anotherRoute.rootNavigationRoute = self?.rootNavigationRoute ?? self
             return [anotherRoute.key: anotherRoute]
         }
         return self
@@ -44,12 +46,14 @@ public extension NavigationHierarchyRoute {
                 accumulator[route.key] = route
                 route.previousRoute = self
                 route.modalParentRoute = self?.modalParentRoute
+                route.parentContainerRoute = self?.parentContainerRoute
+                route.rootNavigationRoute = self?.rootNavigationRoute ?? self
                 return accumulator
             }
         }
         return self
     }
-    
+
     func modals(anotherModalProvider: @escaping () -> NavigationHierarchyRoute) -> NavigationHierarchyRoute {
         assert(modals().isEmpty)
         assert(
@@ -63,7 +67,7 @@ public extension NavigationHierarchyRoute {
         modals = { [weak self] in
             assert(self != nil)
             let anotherRoute: NavigationHierarchyRoute = anotherModalProvider()
-            anotherRoute.modalParentRoute = self?.parentContainerRoute ?? self
+            anotherRoute.modalParentRoute = self
             return [anotherRoute.key: anotherRoute]
         }
         return self

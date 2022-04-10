@@ -10,7 +10,14 @@ import SwiftUI
 
 enum HierarchyRouteType {
     case screen(provider: () -> AnyView)
-    case tabBar(hierarchy: TabBarHierarchyBuilder)
+    case tabBar(hierarchy: TabBarHierarchy)
+    
+    var isSingleRoute: Bool {
+        if case .screen = self {
+            return true
+        }
+        return false
+    }
     
     var hasChildViewRoutes: Bool {
         switch self {
@@ -23,7 +30,8 @@ enum HierarchyRouteType {
 public final class NavigationHierarchyRoute {
     /// Push stack navigation and management
     /// =======================================================
-    internal var previousRoute: NavigationHierarchyRoute?
+    internal weak var previousRoute: NavigationHierarchyRoute?
+    internal weak var rootNavigationRoute: NavigationHierarchyRoute?
     internal var nextRoute: () -> [AnyHashable: NavigationHierarchyRoute] = { [:] }
     /// =======================================================
 
@@ -40,6 +48,7 @@ public final class NavigationHierarchyRoute {
 
     /// Child navigation and management
     /// =======================================================
+    /// Child container
     internal weak var parentContainerRoute: NavigationHierarchyRoute?
     /// =======================================================
 

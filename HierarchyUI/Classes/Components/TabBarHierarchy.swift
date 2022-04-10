@@ -14,7 +14,7 @@ struct TabBarHierarchyTabProperties {
     let route: NavigationHierarchyRoute
 }
 
-public final class TabBarHierarchyBuilder {
+public final class TabBarHierarchy {
     internal let key: AnyHashable
     internal var tabs: [TabBarHierarchyTabProperties] = []
     
@@ -28,7 +28,10 @@ public final class TabBarHierarchyBuilder {
     /// - Parameters:
     ///   - key: Key which identifies constructed TabBar in navigation hierarchy.
     ///   - initialTabIndex: The index of the TabBar associated with the initially selected tab item.
-    public init(key: AnyHashable, initialTabIndex: Int) {
+    public init(
+        key: AnyHashable,
+        initialTabIndex: Int = .zero
+    ) {
         self.key = key
         self.currentlySelectedIndex = initialTabIndex
     }
@@ -39,7 +42,7 @@ public final class TabBarHierarchyBuilder {
     ///   - imageName: TabBarItem imageName. Will be initialized as UIImage.
     ///   - selectedImageName: TabBarItem selectedImageName. Will be initialized as UIImage.
     ///   - routeProvider: Closure which provides a `Route` which is going to be embedded as tab.
-    /// - Returns: a `Self` instance which is `TabBarHierarchyBuilder`.
+    /// - Returns: a `Self` instance which is `TabBarHierarchy`.
     public func tab(
         title: String? = nil,
         imageName: String? = nil,
@@ -63,7 +66,7 @@ public final class TabBarHierarchyBuilder {
     /// - Parameters:
     ///   - tabBarSystemItem: Constants that represent the system tab bar items.
     ///   - routeProvider: Closure which provides a `Route` which is going to be embedded as tab.
-    /// - Returns: a `Self` instance which is `TabBarHierarchyBuilder`.
+    /// - Returns: a `Self` instance which is `TabBarHierarchy`.
     public func tab(
         tabBarSystemItem: UITabBarItem.SystemItem,
         routeProvider: @escaping () -> NavigationHierarchyRoute
@@ -80,6 +83,13 @@ public final class TabBarHierarchyBuilder {
     /// Creates a `HierarchyRoute` out of provided tabs.
     /// - Returns: constructed TabBar `HierarchyRoute.
     public func build() -> NavigationHierarchyRoute {
+        assert(
+            currentlySelectedIndex < tabs.endIndex,
+            """
+            Selected TabBar index is bigger than tabs quantity.
+            TabBar selectedIndex will be reset to zero.
+            """
+        )
         return NavigationHierarchyRoute(
             key: key,
             type: .tabBar(hierarchy: self)

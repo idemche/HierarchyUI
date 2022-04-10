@@ -8,6 +8,25 @@
 
 import SwiftUI
 
+public struct PushSettings {
+    public var hidesBottomBarWhenPushed: Bool
+    public static let `default`: PushSettings = .init(hidesBottomBarWhenPushed: false)
+}
+
+public struct ModalSettings {
+    public var isFullscreen: Bool
+    public static let `default`: ModalSettings = .init(isFullscreen: false)
+}
+
+enum NavigationHierarchyNavigationEvent {
+    case push(key: AnyHashable?, settings: PushSettings = .default)
+    case pop(key: AnyHashable?)
+    case popToRoot
+    case modal(key: AnyHashable?, settings: ModalSettings = .default)
+    case replace(key: AnyHashable?)
+    case dismiss
+}
+
 public final class HierarchyNavigator: ObservableObject {
     private let onNavigationEvent: (NavigationHierarchyNavigationEvent) -> Void
     
@@ -25,6 +44,10 @@ public final class HierarchyNavigator: ObservableObject {
     
     public func pop(key: AnyHashable? = nil) {
         self.onNavigationEvent(.pop(key: key))
+    }
+    
+    public func popToRoot() {
+        self.onNavigationEvent(.popToRoot)
     }
     
     public func replace(key: AnyHashable? = nil) {

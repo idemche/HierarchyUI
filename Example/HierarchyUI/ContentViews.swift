@@ -9,7 +9,7 @@
 import SwiftUI
 import HierarchyUI
 
-struct ContentView1: View {
+struct View1: View {
     
     @EnvironmentObject var navigation: HierarchyNavigator
     
@@ -19,7 +19,7 @@ struct ContentView1: View {
                 settings: .init(hidesBottomBarWhenPushed: true)
             )
         }, label: {
-            Text("1")
+            Text("1 Push next")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -35,7 +35,7 @@ struct ContentView1: View {
     }
 }
 
-struct ContentView2: View {
+struct View2: View {
     
     @EnvironmentObject var navigation: HierarchyNavigator
     
@@ -43,7 +43,7 @@ struct ContentView2: View {
         Button(action: {
             navigation.push()
         }, label: {
-            Text("2")
+            Text("2 Push Next")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -67,14 +67,14 @@ struct ContentView2: View {
     }
 }
 
-struct ContentView3: View {
+struct View3: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
         Button(action: {
             navigation.push()
         }, label: {
-            Text("3")
+            Text("3 Push next")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -90,14 +90,14 @@ struct ContentView3: View {
     }
 }
 
-struct ContentView4: View {
+struct View4: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
         Button(action: {
             navigation.push(key: "6")
         }, label: {
-            Text("4")
+            Text("4 Push to 6")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -113,14 +113,14 @@ struct ContentView4: View {
     }
 }
 
-struct ContentView5: View {
+struct View5: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
         Button(action: {
             navigation.push()
         }, label: {
-            Text("5")
+            Text("5 Push next")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -136,14 +136,14 @@ struct ContentView5: View {
     }
 }
 
-struct ContentView6: View {
+struct View6: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
         Button(action: {
             navigation.push(key: "8")
         }, label: {
-            Text("6")
+            Text("6 Push to 8")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -159,14 +159,14 @@ struct ContentView6: View {
     }
 }
 
-struct ContentView7: View {
+struct View7: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
         Button(action: {
             navigation.push()
         }, label: {
-            Text("7")
+            Text("7 Push next")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -182,14 +182,22 @@ struct ContentView7: View {
     }
 }
 
-struct ContentView8: View {
+struct View8: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
         Button(action: {
-            navigation.push(key: "9")
+            navigation.push()
         }, label: {
-            Text("8")
+            Text("8 Push Next")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.blue)
+        Button(action: {
+            navigation.popToRoot()
+        }, label: {
+            Text("Pop To Root")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -205,14 +213,14 @@ struct ContentView8: View {
     }
 }
 
-struct ContentView9: View {
+struct View9: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
         Button(action: {
             navigation.push(key: "10")
         }, label: {
-            Text("9")
+            Text("9 Push to 10")
                 .frame(width: 100, height: 100, alignment: .center)
                 .foregroundColor(.white)
         })
@@ -228,7 +236,7 @@ struct ContentView9: View {
     }
 }
 
-struct ContentView10: View {
+struct View10: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
@@ -252,7 +260,7 @@ struct ContentView10: View {
 }
 
 
-struct ContentView11: View {
+struct View11: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
@@ -283,7 +291,7 @@ struct ContentView11: View {
     }
 }
 
-struct ContentView12: View {
+struct View12: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
@@ -306,7 +314,7 @@ struct ContentView12: View {
     }
 }
 
-struct ContentView13: View {
+struct View13: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
@@ -337,7 +345,7 @@ struct ContentView13: View {
     }
 }
 
-struct ContentView14: View {
+struct View14: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {
@@ -369,7 +377,7 @@ struct ContentView14: View {
     }
 }
 
-struct ContentViewReplacer: View {
+struct ViewReplacer: View {
     @EnvironmentObject var navigation: HierarchyNavigator
 
     var body: some View {

@@ -18,7 +18,7 @@ import HierarchyUI
 
      func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-         let mainHierarchy = MainNavigationHierarchy()
+         let mainHierarchy = ExampleMainNavigationHierarchy()
          window?.rootViewController = hierarchyRenderer.render(hierarchy: mainHierarchy)
          
          window?.makeKeyAndVisible()

@@ -35,6 +35,8 @@ And you need to organize them into simple push/pop navigation stack.
 
 For that, you need to create a separate `NavigationHierarchy`:
 
+# New Document
+
 <table>
   <tr>
     <th width="30%">Here's an example</th>
@@ -45,7 +47,7 @@ For that, you need to create a separate `NavigationHierarchy`:
     <th rowspan="9"><img src="https://raw.githubusercontent.com/idemche/HierarchyUI/main/docs/images/1.png"></th>
   </tr>
   <tr>
-    <td><div class="highlight highlight-source-swift"><pre>
+    <td><div class="highlight highlight-source-swift" style="font-size: .8rem"><pre>
 struct MainNavigationHierarchy: NavigationHierarchy {
     func structure() -> NavigationHierarchyRoute {
         View1().route(key: "1").pushes {
@@ -61,28 +63,21 @@ struct MainNavigationHierarchy: NavigationHierarchy {
     <td> and then render this hierarchy within AppDelegate</td>
   </tr>
   <tr>
-    <td width="30%"><div class="highlight highlight-source-swift"><pre>
+    <td width="30%"><div class="highlight highlight-source-swift" style="font-size: .8rem"><pre>
  @UIApplicationMain
- class AppDelegate: UIResponder, UIApplicationDelegate {
-     
-     var window: UIWindow?
-
-     lazy var hierarchyRenderer = NavigationHierarchyRouteRenderer()
-
+ final class AppDelegate: UIResponder, UIApplicationDelegate {<br>
+     var window: UIWindow?<br>
+     let renderer = NavigationHierarchyRouteRenderer()<br>
      func application(
          _ application: UIApplication,
          didFinishLaunchingWithOptions
          launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-     ) -> Bool {
-
-         self.window = UIWindow()
-
-         let mainHierarchy = MainNavigationHierarchy()
-         window?.rootViewController = hierarchyRenderer
-            .render(hierarchy: mainHierarchy)
-
-         window?.makeKeyAndVisible()
-
+     ) -> Bool {<br>
+         self.window = UIWindow()<br>
+         let hierarchy = MainNavigationHierarchy()
+         window?.rootViewController = renderer
+            .render(hierarchy: hierarchy)<br>
+         window?.makeKeyAndVisible()<br>
          return true
      }
 }</pre></div></td>
@@ -106,11 +101,9 @@ To control Navigation, you need to declare Navigation EnvironmentObject inside y
     <th rowspan="9"><img src="https://github.com/idemche/HierarchyUI/blob/main/docs/images/2.gif?raw=true"></th>
   </tr>
   <tr>
-    <td><div class="higghlight highlight-source-swift"><pre>
-struct View1: View {    
-    @EnvironmentObject
-    var navigation: HierarchyNavigator
-    
+    <td><div class="higghlight highlight-source-swift" style="font-size: .8rem"><pre>
+struct View1: View {
+    @EnvironmentObject var navigation: HierarchyNavigator<br>
     var body: some View {
         Button(
         action: {},
@@ -132,11 +125,9 @@ struct View1: View {
     <td> And then invoke push method</td>
   </tr>
   <tr>
-    <td width="30%"><div class="highlight highlight-source-swift"><pre>
+    <td width="30%"><div class="highlight highlight-source-swift" style="font-size: .8rem"><pre>
  struct View1: View {
-    @EnvironmentObject
-    var navigation: HierarchyNavigator
-    
+    @EnvironmentObject var navigation: HierarchyNavigator<br>
     var body: some View {
         Button(action: {
             navigation.push()
@@ -153,7 +144,7 @@ struct View1: View {
     }
 }</pre></div></td>
   </tr>
-</table> 
+</table>
 
 
 ## Example

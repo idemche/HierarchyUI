@@ -77,7 +77,7 @@ And you need to organize them into simple push/pop navigation stack.
 
 For that, you need to create a separate `NavigationHierarchy`:
 
-# New Document
+# Highlights:
 
 <table>
   <tr>
@@ -189,7 +189,7 @@ struct View1: View {
 </table>
 
 
-## Example
+## App-wise example
 
 ```swift
 

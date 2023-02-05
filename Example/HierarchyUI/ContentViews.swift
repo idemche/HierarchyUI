@@ -265,6 +265,22 @@ struct View11: View {
     
     var body: some View {
         Button(action: {
+            navigation.push()
+        }, label: {
+            Text("Push to TabBar")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.blue)
+        Button(action: {
+            navigation.replace()
+        }, label: {
+            Text("Replace for TabBar")
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(.white)
+        })
+        .background(Color.orange)
+        Button(action: {
             navigation.pop(key: "1")
         }, label: {
             Text("11 Pops to 1")
@@ -272,14 +288,6 @@ struct View11: View {
                 .foregroundColor(.white)
         })
         .background(Color.red)
-        Button(action: {
-            navigation.replace()
-        }, label: {
-            Text("Replace")
-                .frame(width: 100, height: 100, alignment: .center)
-                .foregroundColor(.white)
-        })
-        .background(Color.blue)
         Button(action: {
             navigation.pop()
         }, label: {

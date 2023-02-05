@@ -185,7 +185,11 @@ internal final class HierarchyGraphManager {
         case .modal:
             scannedRoute = anchorRoute.modalParentRoute
         case .pushable:
-            scannedRoute = anchorRoute.previousRoute
+            if let previousRoute = anchorRoute.previousRoute {
+                scannedRoute = previousRoute
+            } else if let parentRoute = anchorRoute.parentContainerRoute, parentRoute.type.hasChildViewRoutes {
+                scannedRoute = parentRoute.previousRoute
+            }
             while let key = key, scannedRoute?.key != key, scannedRoute != nil {
                 if scannedRoute?.parentContainerRoute?.key == key {
                     scannedRoute = scannedRoute?.parentContainerRoute
@@ -218,11 +222,17 @@ internal final class HierarchyGraphManager {
             switch currentRootRoute.reference?.type {
             case .tabBar(let currentHierarchy):
                 switch nextRoute.type {
-                case .screen:
+                // It means that we're moving to node which is wrapped in container(like TabBar).
+                // Usually its the case for pop from Tab Bar to previous route.
+                case .screen where nextRoute.parentContainerRoute != nil:
                     currentChildRoutes[currentHierarchy.currentlySelectedIndex] = WR(nextRoute)
                     self.currentGraphState = .routesTree(
                         rootRoute: currentRootRoute,
                         routes: currentChildRoutes
+                    )
+                case .screen:
+                    self.currentGraphState = .singleRoute(
+                        route: WR(nextRoute)
                     )
                 case .tabBar(let nestedHierarchy) where currentHierarchy.key == nestedHierarchy.key:
                     let currentTabRoute = currentChildRoutes[currentHierarchy.currentlySelectedIndex]

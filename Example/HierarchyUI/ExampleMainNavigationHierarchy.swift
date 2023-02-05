@@ -20,7 +20,9 @@ struct ExampleMainNavigationHierarchy: NavigationHierarchy {
                                 View8().route(key: "8").pushes {
                                     View9().route(key: "9").pushes {
                                         View10().route(key: "10").pushes {
-                                            View11().route(key: "11").replaces {
+                                            View11().route(key: "11").pushes {
+                                                ExampleTabBarHierarchy().structure()
+                                            }.replaces {
                                                 ExampleTabBarHierarchy().structure()
                                             }
                                         }

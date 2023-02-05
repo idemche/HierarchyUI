@@ -14,24 +14,26 @@ struct View1: View {
     @EnvironmentObject var navigation: HierarchyNavigator
     
     var body: some View {
-        Button(action: {
-            navigation.push(
-                settings: .init(hidesBottomBarWhenPushed: true)
-            )
-        }, label: {
-            Text("1 Push next")
-                .frame(width: 100, height: 100, alignment: .center)
-                .foregroundColor(.white)
-        })
-        .background(Color.green)
-        Button(action: {
-            navigation.pop()
-        }, label: {
-            Text("pop")
-                .frame(width: 100, height: 100, alignment: .center)
-                .foregroundColor(.white)
-        })
-        .background(Color.green)
+        VStack {
+            Button(action: {
+                navigation.push(
+                    settings: .init(hidesBottomBarWhenPushed: true)
+                )
+            }, label: {
+                Text("1 Push next")
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .foregroundColor(.white)
+            })
+            .background(Color.green)
+            Button(action: {
+                navigation.pop()
+            }, label: {
+                Text("pop")
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .foregroundColor(.white)
+            })
+            .background(Color.green)
+        }
     }
 }
 

@@ -7,42 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09C86A0EC8E065A90166D4AA8BF77DA5 /* TabBarControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051D0088C30E305C37AE4D4208EECEF /* TabBarControllerProxy.swift */; };
+		05810A0B4A29AB06FB121014D90F4A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		05D518ADB2310AF8D4BF4795CE21D1F3 /* HierarchyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1F2BCC55A7E74D9429552AF09F3DF /* HierarchyRoute.swift */; };
 		0B0EAAC834C5778E8980A24B63F3DE64 /* Pods-HierarchyUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F82E892F7F21783AFF0C73CA43B209 /* Pods-HierarchyUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BDFCD908E4CFC18519079DF3DC78412 /* HierarchyRoute+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D61476D8BE862E8866358098E15923D /* HierarchyRoute+Builder.swift */; };
+		0C7B058D652E9789081911EF65250435 /* HierarchyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09011B3827C649C1896750BF3807DA26 /* HierarchyUI-dummy.m */; };
+		15F401C837540BF2F85C484725C6949D /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71613DABCB136418491C7E2547517D2E /* WeakReference.swift */; };
+		280BF8F34FB085A55E131BDC221DBEAC /* TabBarControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D2D65A149AC6C52CFBA131061B5478 /* TabBarControllerProxy.swift */; };
+		29399FC6F19E569B93CFB0F6EBA78C06 /* HierarchyGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886990A499E0759565D8BC3A19A00F9 /* HierarchyGraphManager.swift */; };
+		2E51BE66B681F0100E3AF9E7224DFD8B /* HierarchyRouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C106A1CE5E3B5FD0461F6234312BFF /* HierarchyRouteRenderer.swift */; };
 		3D769F25677CFA5B1AD536806328FB68 /* Pods-HierarchyUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A76CA5EA94A740FEFFDE676B0E662E05 /* Pods-HierarchyUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FC1B54F5705D81CDCF000C8E4BFC92D /* NavigationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE660DBC14A9D29E2B906DD298AF3C1 /* NavigationControllerProxy.swift */; };
 		46A13D2A8D89F38EDC306E0A3528D19E /* Pods-HierarchyUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A91C3BC65AAE791FB200150411C60A /* Pods-HierarchyUI_Tests-dummy.m */; };
-		51475929F174103483ACCA68773C530F /* NavigationControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23D09BEA5A131C0C3EDAE92171C3114 /* NavigationControllerProxy.swift */; };
-		5CA9FD7B52DF853469B652652B509539 /* HierarchyRoute+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829AD8E731576A2A3DFD8F5151232521 /* HierarchyRoute+Equatable.swift */; };
-		67DF8202F9B0EA94906DD08374B0A76A /* TabBarHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC93898ED7EFA1D62FE8A4F50686A59 /* TabBarHierarchy.swift */; };
 		6AA0B874757B4FD4A4EEE03DC0888123 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6C534E67966E6CDEC7D7DBF6953FD21D /* HierarchyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A32A6176072D5A9907B4F5FBE548CF /* HierarchyUI-dummy.m */; };
-		6F6C9A579B4B37861582E72C51693E69 /* HierarchyRouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE73216EE54244EAFDCE2A8ABC959B /* HierarchyRouteRenderer.swift */; };
-		784CCF4221FFB7DDB1479E90E0BE60D5 /* HostingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155B6DBB710491CE963CE5DD3AD9878A /* HostingControllerProxy.swift */; };
-		82AC750A3D63B4A79B7A25E0A8545198 /* HierarchyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB3BBBDEF2A065FDB9157B026DD0375 /* HierarchyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EA82F0F05FF2F6258842340A3C307CA /* HierarchyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2826B1C49B5F7B2CF2E12A22AEC32 /* HierarchyNavigator.swift */; };
-		905A964A3D409079099D9BCBDB1A469E /* HierarchyRoute+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F19615EFC501AA22E3D5A24EC52105 /* HierarchyRoute+Builder.swift */; };
-		90C95414364B0ED905699828DF6E900C /* TabBarHierarchy+Hosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D6FA9C0C1D58BA8078EBB0DA782ED /* TabBarHierarchy+Hosting.swift */; };
+		7ACD766B342A4478A1D1E9B24414CCAE /* HierarchyDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49778A24CB0E336906B702FD891615 /* HierarchyDecorator.swift */; };
+		81B1921D44030A1604E597D6C520207E /* EventNotifyingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3B8F445E9138B6035478A2C01C730 /* EventNotifyingControllerProxy.swift */; };
+		8BAA178DDBECCD7D8BFCA81F3A3E805B /* HostingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A85BF8D661479B13F76B6455F62E7 /* HostingControllerProxy.swift */; };
 		99BF43F4DBF1D98E143C86F9F5CADB15 /* Pods-HierarchyUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABFCF2E9357E0362434E0501F3E97E9 /* Pods-HierarchyUI_Example-dummy.m */; };
-		A628340CF4398F36A188940FF501FA36 /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FA17923690618E2397D3F27380B6F /* WeakReference.swift */; };
-		AA5A7FEF23BB9A71998F2FD5E4F12F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A1F1322CFCC842CBEF48FCAE4580C32D /* HierarchyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C8132B8971DC958FBBBB43151DEEE /* HierarchyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A40DF4C4C6458C8D23DFD1C370CE2C4E /* HierarchyRoute+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B62D327E9F985E14334FD0FE6C65A0 /* HierarchyRoute+Equatable.swift */; };
+		A4CD9FC7A7D7D39351513B980C3AF032 /* TabBarHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23B4C9810D24800D2D38CEA4898BD0 /* TabBarHierarchy.swift */; };
+		A5C63EC235B4E9DF0C87CB7F70496D56 /* View+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3E6781D3415A65F17DDC7383CC0F7 /* View+Route.swift */; };
 		AC2042DDA1CD3F2886543CA1B6F5B46E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B1350376FD930FA49A233A119B78A4A9 /* Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98B5124081430129B58C611AD2D16D /* Hierarchy.swift */; };
-		B26F1B10CFBB7CC8FC7501BD515D6121 /* HierarchyHostingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265A7B3C4B31886B8A59350008829F5 /* HierarchyHostingManager.swift */; };
-		B7CEBDA1FB5C575BF05CE2BCCCEDF31A /* EventNotifyingControllerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC9447B2E4E6994D2930EA6C1C56CE /* EventNotifyingControllerProxy.swift */; };
-		B95DD2D5861B9709F3CB191905FC1DE6 /* HierarchyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F80851532968F93F858EBC4DFE80DE /* HierarchyRoute.swift */; };
-		EDA9ADC6DF5A8BBEE836077D5201F728 /* HierarchyGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899D8DB06CDFE50F478F42FC5C7B2F2 /* HierarchyGraphManager.swift */; };
-		F903125789CBD8973BF1491BABF9F059 /* View+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3BE7802247CFA099AF2D9C578B96B /* View+Route.swift */; };
+		B14BDB4A0961834A23527034551E85B7 /* HierarchyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADEBEFACE6176C5E0771ABC9B46338 /* HierarchyNavigator.swift */; };
+		C345D4EE886CE54B7407356656277662 /* Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BC0DE152A783A7606ACF33C78F0D12 /* Hierarchy.swift */; };
+		E4F2ED4C57DD9BCA8C2B94F7A5F9F79B /* TabBarHierarchy+Hosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95E58089D133DB4E00845792871FB5 /* TabBarHierarchy+Hosting.swift */; };
+		F301F3F8620E9204127E3596AC9487E5 /* HierarchyHostingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC0C7B281E3BCE596429FD7AFF5B29 /* HierarchyHostingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1575B60B7B196A56B0876F5B7C248265 /* PBXContainerItemProxy */ = {
+		63077B166B956C0B578FC0F233DF8635 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DCAAF7273146A4ED04AEBCAAB67B061;
 			remoteInfo = "Pods-HierarchyUI_Example";
 		};
-		B5F82E460CFAF9A600B0B63F258E17CB /* PBXContainerItemProxy */ = {
+		874224F1BDED57D78C108F77E4CB363B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,55 +53,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		017D6FA9C0C1D58BA8078EBB0DA782ED /* TabBarHierarchy+Hosting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TabBarHierarchy+Hosting.swift"; sourceTree = "<group>"; };
-		0A98B5124081430129B58C611AD2D16D /* Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hierarchy.swift; path = HierarchyUI/Classes/Hierarchy.swift; sourceTree = "<group>"; };
+		04AA6D45FFFA667862024B35060A79D0 /* HierarchyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HierarchyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		09011B3827C649C1896750BF3807DA26 /* HierarchyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HierarchyUI-dummy.m"; sourceTree = "<group>"; };
 		0ABFCF2E9357E0362434E0501F3E97E9 /* Pods-HierarchyUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HierarchyUI_Example-dummy.m"; sourceTree = "<group>"; };
-		0ADE73216EE54244EAFDCE2A8ABC959B /* HierarchyRouteRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyRouteRenderer.swift; path = HierarchyUI/Classes/HierarchyRouteRenderer.swift; sourceTree = "<group>"; };
-		0FB3BBBDEF2A065FDB9157B026DD0375 /* HierarchyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HierarchyUI-umbrella.h"; sourceTree = "<group>"; };
-		155B6DBB710491CE963CE5DD3AD9878A /* HostingControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HostingControllerProxy.swift; sourceTree = "<group>"; };
+		180839CAA4890E54176822C7C4343151 /* HierarchyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HierarchyUI.debug.xcconfig; sourceTree = "<group>"; };
 		1B7BC0E4A73D32B00605C20AAAD71EAE /* Pods-HierarchyUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HierarchyUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1FF7564288D9D2D5CA970AE3A3BFFDA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		23D0831072931333DC165F4EABABA9F0 /* 2.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = 2.gif; path = docs/images/2.gif; sourceTree = "<group>"; };
+		20A3B8F445E9138B6035478A2C01C730 /* EventNotifyingControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventNotifyingControllerProxy.swift; sourceTree = "<group>"; };
+		2886990A499E0759565D8BC3A19A00F9 /* HierarchyGraphManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyGraphManager.swift; path = HierarchyUI/Classes/HierarchyGraphManager.swift; sourceTree = "<group>"; };
 		2E8D8EA07F82BED50E7A286441381CA2 /* Pods-HierarchyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HierarchyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3507E58A832EB47AE3DE3B21F416B6F8 /* Pods-HierarchyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HierarchyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		36123B7490E842838AD9D14A9C009307 /* Pods-HierarchyUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HierarchyUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		37F80851532968F93F858EBC4DFE80DE /* HierarchyRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyRoute.swift; path = HierarchyUI/Classes/HierarchyRoute.swift; sourceTree = "<group>"; };
+		39ADEBEFACE6176C5E0771ABC9B46338 /* HierarchyNavigator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyNavigator.swift; path = HierarchyUI/Classes/HierarchyNavigator.swift; sourceTree = "<group>"; };
 		3A73052B2402AFDE851C9593B4ED1504 /* Pods-HierarchyUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HierarchyUI_Tests.modulemap"; sourceTree = "<group>"; };
-		3BFB8D5E44A4296D8B63AF6D6206FC78 /* HierarchyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HierarchyUI.release.xcconfig; sourceTree = "<group>"; };
-		3DB2B0A187532DE6B65A9572C3CF94E7 /* HierarchyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HierarchyUI-Info.plist"; sourceTree = "<group>"; };
 		3E92894B56A224667DB65297379B89F7 /* Pods-HierarchyUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HierarchyUI_Example.modulemap"; sourceTree = "<group>"; };
-		44A32A6176072D5A9907B4F5FBE548CF /* HierarchyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HierarchyUI-dummy.m"; sourceTree = "<group>"; };
-		492A5A8124A32351EBD0F71FAEB341B0 /* HierarchyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HierarchyUI.modulemap; sourceTree = "<group>"; };
-		4E7FA17923690618E2397D3F27380B6F /* WeakReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
-		6051D0088C30E305C37AE4D4208EECEF /* TabBarControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarControllerProxy.swift; sourceTree = "<group>"; };
+		41BC0DE152A783A7606ACF33C78F0D12 /* Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hierarchy.swift; path = HierarchyUI/Classes/Hierarchy.swift; sourceTree = "<group>"; };
+		42D3E6781D3415A65F17DDC7383CC0F7 /* View+Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Route.swift"; path = "HierarchyUI/Classes/View+Route.swift"; sourceTree = "<group>"; };
+		465C8132B8971DC958FBBBB43151DEEE /* HierarchyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HierarchyUI-umbrella.h"; sourceTree = "<group>"; };
+		49616B622FB408EE58379AC4A2C3F0B4 /* HierarchyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HierarchyUI.modulemap; sourceTree = "<group>"; };
+		4A1CCCC12DAFABE4A7EAD096F4FB09F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		50F4DB401B4B35F16F2DD2FD9C78CB8C /* HierarchyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HierarchyUI-Info.plist"; sourceTree = "<group>"; };
+		52B62D327E9F985E14334FD0FE6C65A0 /* HierarchyRoute+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HierarchyRoute+Equatable.swift"; path = "HierarchyUI/Classes/HierarchyRoute+Equatable.swift"; sourceTree = "<group>"; };
+		53D2D65A149AC6C52CFBA131061B5478 /* TabBarControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarControllerProxy.swift; sourceTree = "<group>"; };
 		69B0F11B17F714438F720ED6530BC7D0 /* Pods-HierarchyUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HierarchyUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A4B55FED7C8C409A77E26BD7C1BB2D5 /* Pods-HierarchyUI_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HierarchyUI_Example"; path = Pods_HierarchyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C09706092F834A4C38707B4A7C9E379 /* Pods-HierarchyUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HierarchyUI_Tests-Info.plist"; sourceTree = "<group>"; };
 		6F818E79F9BEF832A8D105D03810EF51 /* Pods-HierarchyUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HierarchyUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71613DABCB136418491C7E2547517D2E /* WeakReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		739440F803DBD2C514B72642689368E6 /* Pods-HierarchyUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HierarchyUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7568F9D6D38A3E996E9C90B55E710E01 /* 1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = 1.png; path = docs/images/1.png; sourceTree = "<group>"; };
+		7D61476D8BE862E8866358098E15923D /* HierarchyRoute+Builder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HierarchyRoute+Builder.swift"; path = "HierarchyUI/Classes/HierarchyRoute+Builder.swift"; sourceTree = "<group>"; };
+		7E23B4C9810D24800D2D38CEA4898BD0 /* TabBarHierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarHierarchy.swift; sourceTree = "<group>"; };
 		81B88525705B31AF2F0B14C4ACDF0A07 /* Pods-HierarchyUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HierarchyUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8265A7B3C4B31886B8A59350008829F5 /* HierarchyHostingManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyHostingManager.swift; path = HierarchyUI/Classes/HierarchyHostingManager.swift; sourceTree = "<group>"; };
-		829AD8E731576A2A3DFD8F5151232521 /* HierarchyRoute+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HierarchyRoute+Equatable.swift"; path = "HierarchyUI/Classes/HierarchyRoute+Equatable.swift"; sourceTree = "<group>"; };
+		8AD1F2BCC55A7E74D9429552AF09F3DF /* HierarchyRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyRoute.swift; path = HierarchyUI/Classes/HierarchyRoute.swift; sourceTree = "<group>"; };
 		9249AFD1E2FEB8C0305B89A779FEF1B5 /* Pods-HierarchyUI_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HierarchyUI_Tests"; path = Pods_HierarchyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955A85BF8D661479B13F76B6455F62E7 /* HostingControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HostingControllerProxy.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FC93898ED7EFA1D62FE8A4F50686A59 /* TabBarHierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarHierarchy.swift; sourceTree = "<group>"; };
 		A76CA5EA94A740FEFFDE676B0E662E05 /* Pods-HierarchyUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HierarchyUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		A7FA9BE0F0BE0EF59A978C64DFC7ECE5 /* HierarchyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HierarchyUI.debug.xcconfig; sourceTree = "<group>"; };
-		AFA2826B1C49B5F7B2CF2E12A22AEC32 /* HierarchyNavigator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyNavigator.swift; path = HierarchyUI/Classes/HierarchyNavigator.swift; sourceTree = "<group>"; };
-		B6A3BE7802247CFA099AF2D9C578B96B /* View+Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Route.swift"; path = "HierarchyUI/Classes/View+Route.swift"; sourceTree = "<group>"; };
-		B9FB5591C00F439537F5EA9759A2F6CB /* HierarchyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HierarchyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C23D09BEA5A131C0C3EDAE92171C3114 /* NavigationControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationControllerProxy.swift; sourceTree = "<group>"; };
-		C2F8A058E263529DC8785031412AA1FE /* HierarchyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HierarchyUI-prefix.pch"; sourceTree = "<group>"; };
-		C34F432BA630F7E82946C1363EC82477 /* 1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = 1.png; path = docs/images/1.png; sourceTree = "<group>"; };
+		AE922E30083E8AC6A9FAE82BB322DE91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B959FDECD4C6A166CCA0A2EE6559796C /* HierarchyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HierarchyUI.release.xcconfig; sourceTree = "<group>"; };
+		BAE660DBC14A9D29E2B906DD298AF3C1 /* NavigationControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationControllerProxy.swift; sourceTree = "<group>"; };
+		BC49778A24CB0E336906B702FD891615 /* HierarchyDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyDecorator.swift; path = HierarchyUI/Classes/HierarchyDecorator.swift; sourceTree = "<group>"; };
 		C4A91C3BC65AAE791FB200150411C60A /* Pods-HierarchyUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HierarchyUI_Tests-dummy.m"; sourceTree = "<group>"; };
-		C899D8DB06CDFE50F478F42FC5C7B2F2 /* HierarchyGraphManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyGraphManager.swift; path = HierarchyUI/Classes/HierarchyGraphManager.swift; sourceTree = "<group>"; };
+		C5C106A1CE5E3B5FD0461F6234312BFF /* HierarchyRouteRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyRouteRenderer.swift; path = HierarchyUI/Classes/HierarchyRouteRenderer.swift; sourceTree = "<group>"; };
 		CBF81F76188B80E30DEC2C0B60FAD66F /* Pods-HierarchyUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HierarchyUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		CD31BF2BF2CB6950A94D0BE03A68597B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CE95E58089D133DB4E00845792871FB5 /* TabBarHierarchy+Hosting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TabBarHierarchy+Hosting.swift"; sourceTree = "<group>"; };
 		D0F82E892F7F21783AFF0C73CA43B209 /* Pods-HierarchyUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HierarchyUI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E5F19615EFC501AA22E3D5A24EC52105 /* HierarchyRoute+Builder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HierarchyRoute+Builder.swift"; path = "HierarchyUI/Classes/HierarchyRoute+Builder.swift"; sourceTree = "<group>"; };
+		D272B775B01E0B7D111E6B8019ED5679 /* HierarchyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HierarchyUI-prefix.pch"; sourceTree = "<group>"; };
+		E2DC0C7B281E3BCE596429FD7AFF5B29 /* HierarchyHostingManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HierarchyHostingManager.swift; path = HierarchyUI/Classes/HierarchyHostingManager.swift; sourceTree = "<group>"; };
 		E74D463DE0ECCF70EE01CA886032ED70 /* Pods-HierarchyUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HierarchyUI_Example-Info.plist"; sourceTree = "<group>"; };
-		F5BC9447B2E4E6994D2930EA6C1C56CE /* EventNotifyingControllerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventNotifyingControllerProxy.swift; sourceTree = "<group>"; };
+		E96C0923DFA095BF68A3750950F79E59 /* 2.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = 2.gif; path = docs/images/2.gif; sourceTree = "<group>"; };
 		F7E57545338713CE4689D6346ACAAFAD /* HierarchyUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HierarchyUI; path = HierarchyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,40 +123,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		821518705EA7139D98AB7C614F68B00F /* Frameworks */ = {
+		5486751259DB14BA1A149DD0B8FD6055 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5A7FEF23BB9A71998F2FD5E4F12F2E /* Foundation.framework in Frameworks */,
+				05810A0B4A29AB06FB121014D90F4A76 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C599D1738DFDB727B3E98B9F0757BED /* Components */ = {
+		0255E17DDF56946C0815123C7641591C /* UIKitProxies */ = {
 			isa = PBXGroup;
 			children = (
-				9FC93898ED7EFA1D62FE8A4F50686A59 /* TabBarHierarchy.swift */,
-				017D6FA9C0C1D58BA8078EBB0DA782ED /* TabBarHierarchy+Hosting.swift */,
+				20A3B8F445E9138B6035478A2C01C730 /* EventNotifyingControllerProxy.swift */,
+				955A85BF8D661479B13F76B6455F62E7 /* HostingControllerProxy.swift */,
+				BAE660DBC14A9D29E2B906DD298AF3C1 /* NavigationControllerProxy.swift */,
+				53D2D65A149AC6C52CFBA131061B5478 /* TabBarControllerProxy.swift */,
 			);
-			name = Components;
-			path = HierarchyUI/Classes/Components;
+			name = UIKitProxies;
+			path = HierarchyUI/Classes/UIKitProxies;
 			sourceTree = "<group>";
 		};
-		454EA5FEB563BA5128BDCC349B28F8D9 /* Support Files */ = {
+		338944E2F2C8095E0659D5ED111ACD39 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				492A5A8124A32351EBD0F71FAEB341B0 /* HierarchyUI.modulemap */,
-				44A32A6176072D5A9907B4F5FBE548CF /* HierarchyUI-dummy.m */,
-				3DB2B0A187532DE6B65A9572C3CF94E7 /* HierarchyUI-Info.plist */,
-				C2F8A058E263529DC8785031412AA1FE /* HierarchyUI-prefix.pch */,
-				0FB3BBBDEF2A065FDB9157B026DD0375 /* HierarchyUI-umbrella.h */,
-				A7FA9BE0F0BE0EF59A978C64DFC7ECE5 /* HierarchyUI.debug.xcconfig */,
-				3BFB8D5E44A4296D8B63AF6D6206FC78 /* HierarchyUI.release.xcconfig */,
+				A1F444015F65C9F34D32B8109B932F5E /* HierarchyUI */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HierarchyUI";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4C318FD2D6C3F965AE38329DAC399718 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7568F9D6D38A3E996E9C90B55E710E01 /* 1.png */,
+				E96C0923DFA095BF68A3750950F79E59 /* 2.gif */,
+				04AA6D45FFFA667862024B35060A79D0 /* HierarchyUI.podspec */,
+				AE922E30083E8AC6A9FAE82BB322DE91 /* LICENSE */,
+				4A1CCCC12DAFABE4A7EAD096F4FB09F5 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -163,6 +172,15 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5D7B77B797F2BBA966BAE688146FF08B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71613DABCB136418491C7E2547517D2E /* WeakReference.swift */,
+			);
+			name = Utilities;
+			path = HierarchyUI/Classes/Utilities;
 			sourceTree = "<group>";
 		};
 		6A7C0B04B056CDEA74CCBE9CB63747CD /* Pods-HierarchyUI_Tests */ = {
@@ -198,12 +216,27 @@
 			path = "Target Support Files/Pods-HierarchyUI_Example";
 			sourceTree = "<group>";
 		};
-		9FA3664C7DFDEDCA7433228BDC3D30DE /* Development Pods */ = {
+		A1F444015F65C9F34D32B8109B932F5E /* HierarchyUI */ = {
 			isa = PBXGroup;
 			children = (
-				BB162F519F727D238424131535D6AC55 /* HierarchyUI */,
+				41BC0DE152A783A7606ACF33C78F0D12 /* Hierarchy.swift */,
+				BC49778A24CB0E336906B702FD891615 /* HierarchyDecorator.swift */,
+				2886990A499E0759565D8BC3A19A00F9 /* HierarchyGraphManager.swift */,
+				E2DC0C7B281E3BCE596429FD7AFF5B29 /* HierarchyHostingManager.swift */,
+				39ADEBEFACE6176C5E0771ABC9B46338 /* HierarchyNavigator.swift */,
+				8AD1F2BCC55A7E74D9429552AF09F3DF /* HierarchyRoute.swift */,
+				7D61476D8BE862E8866358098E15923D /* HierarchyRoute+Builder.swift */,
+				52B62D327E9F985E14334FD0FE6C65A0 /* HierarchyRoute+Equatable.swift */,
+				C5C106A1CE5E3B5FD0461F6234312BFF /* HierarchyRouteRenderer.swift */,
+				42D3E6781D3415A65F17DDC7383CC0F7 /* View+Route.swift */,
+				ADB016AC68E41296E9C39010876E22FB /* Components */,
+				4C318FD2D6C3F965AE38329DAC399718 /* Pod */,
+				E4E324A14822AD9E4D9EF36F1BB9047A /* Support Files */,
+				0255E17DDF56946C0815123C7641591C /* UIKitProxies */,
+				5D7B77B797F2BBA966BAE688146FF08B /* Utilities */,
 			);
-			name = "Development Pods";
+			name = HierarchyUI;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		AB6590371808773461D1921AC07A2C00 /* Targets Support Files */ = {
@@ -215,33 +248,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BB162F519F727D238424131535D6AC55 /* HierarchyUI */ = {
+		ADB016AC68E41296E9C39010876E22FB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0A98B5124081430129B58C611AD2D16D /* Hierarchy.swift */,
-				C899D8DB06CDFE50F478F42FC5C7B2F2 /* HierarchyGraphManager.swift */,
-				8265A7B3C4B31886B8A59350008829F5 /* HierarchyHostingManager.swift */,
-				AFA2826B1C49B5F7B2CF2E12A22AEC32 /* HierarchyNavigator.swift */,
-				37F80851532968F93F858EBC4DFE80DE /* HierarchyRoute.swift */,
-				E5F19615EFC501AA22E3D5A24EC52105 /* HierarchyRoute+Builder.swift */,
-				829AD8E731576A2A3DFD8F5151232521 /* HierarchyRoute+Equatable.swift */,
-				0ADE73216EE54244EAFDCE2A8ABC959B /* HierarchyRouteRenderer.swift */,
-				B6A3BE7802247CFA099AF2D9C578B96B /* View+Route.swift */,
-				2C599D1738DFDB727B3E98B9F0757BED /* Components */,
-				E59D78B781B5125EC43DE63D1298D555 /* Pod */,
-				454EA5FEB563BA5128BDCC349B28F8D9 /* Support Files */,
-				DD07D717CB862573EFA649999EDDB4CE /* UIKitProxies */,
-				ED4E71A6873277A8A4A1D53034941711 /* Utilities */,
+				7E23B4C9810D24800D2D38CEA4898BD0 /* TabBarHierarchy.swift */,
+				CE95E58089D133DB4E00845792871FB5 /* TabBarHierarchy+Hosting.swift */,
 			);
-			name = HierarchyUI;
-			path = ../..;
+			name = Components;
+			path = HierarchyUI/Classes/Components;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9FA3664C7DFDEDCA7433228BDC3D30DE /* Development Pods */,
+				338944E2F2C8095E0659D5ED111ACD39 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				FDB452D07EE1F503C2501675702762C0 /* Products */,
 				AB6590371808773461D1921AC07A2C00 /* Targets Support Files */,
@@ -256,37 +277,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD07D717CB862573EFA649999EDDB4CE /* UIKitProxies */ = {
+		E4E324A14822AD9E4D9EF36F1BB9047A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5BC9447B2E4E6994D2930EA6C1C56CE /* EventNotifyingControllerProxy.swift */,
-				155B6DBB710491CE963CE5DD3AD9878A /* HostingControllerProxy.swift */,
-				C23D09BEA5A131C0C3EDAE92171C3114 /* NavigationControllerProxy.swift */,
-				6051D0088C30E305C37AE4D4208EECEF /* TabBarControllerProxy.swift */,
+				49616B622FB408EE58379AC4A2C3F0B4 /* HierarchyUI.modulemap */,
+				09011B3827C649C1896750BF3807DA26 /* HierarchyUI-dummy.m */,
+				50F4DB401B4B35F16F2DD2FD9C78CB8C /* HierarchyUI-Info.plist */,
+				D272B775B01E0B7D111E6B8019ED5679 /* HierarchyUI-prefix.pch */,
+				465C8132B8971DC958FBBBB43151DEEE /* HierarchyUI-umbrella.h */,
+				180839CAA4890E54176822C7C4343151 /* HierarchyUI.debug.xcconfig */,
+				B959FDECD4C6A166CCA0A2EE6559796C /* HierarchyUI.release.xcconfig */,
 			);
-			name = UIKitProxies;
-			path = HierarchyUI/Classes/UIKitProxies;
-			sourceTree = "<group>";
-		};
-		E59D78B781B5125EC43DE63D1298D555 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C34F432BA630F7E82946C1363EC82477 /* 1.png */,
-				23D0831072931333DC165F4EABABA9F0 /* 2.gif */,
-				B9FB5591C00F439537F5EA9759A2F6CB /* HierarchyUI.podspec */,
-				CD31BF2BF2CB6950A94D0BE03A68597B /* LICENSE */,
-				1FF7564288D9D2D5CA970AE3A3BFFDA3 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		ED4E71A6873277A8A4A1D53034941711 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				4E7FA17923690618E2397D3F27380B6F /* WeakReference.swift */,
-			);
-			name = Utilities;
-			path = HierarchyUI/Classes/Utilities;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HierarchyUI";
 			sourceTree = "<group>";
 		};
 		FDB452D07EE1F503C2501675702762C0 /* Products */ = {
@@ -302,11 +305,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8E9439E3EDC32C00BCDF1DE7F9F6B666 /* Headers */ = {
+		8FDC4FD97DBF147676C3395616C76B80 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82AC750A3D63B4A79B7A25E0A8545198 /* HierarchyUI-umbrella.h in Headers */,
+				A1F1322CFCC842CBEF48FCAE4580C32D /* HierarchyUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +344,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A93E31C7D9B50BE10DB1789B51D6655A /* PBXTargetDependency */,
+				0782862E0BFE6E5DC92748AE4D1DA442 /* PBXTargetDependency */,
 			);
 			name = "Pods-HierarchyUI_Tests";
 			productName = Pods_HierarchyUI_Tests;
@@ -360,7 +363,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6F38998844E1AB773420281B3228D0DB /* PBXTargetDependency */,
+				1D758C86693647D0FF2F1737818ECB70 /* PBXTargetDependency */,
 			);
 			name = "Pods-HierarchyUI_Example";
 			productName = Pods_HierarchyUI_Example;
@@ -369,12 +372,12 @@
 		};
 		D20E82F18AF93FE765CE738F029FEB1F /* HierarchyUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6BE0F9B6C14EA256E5BC6D006C9A9C0 /* Build configuration list for PBXNativeTarget "HierarchyUI" */;
+			buildConfigurationList = 819F480D6B6E437F8C72160D81449D48 /* Build configuration list for PBXNativeTarget "HierarchyUI" */;
 			buildPhases = (
-				8E9439E3EDC32C00BCDF1DE7F9F6B666 /* Headers */,
-				E04E250FAA54F511A0BE3F4F582D06A7 /* Sources */,
-				821518705EA7139D98AB7C614F68B00F /* Frameworks */,
-				EE5E7862C4860D8A272BEE65ACE0B8A4 /* Resources */,
+				8FDC4FD97DBF147676C3395616C76B80 /* Headers */,
+				329146085DEDE5845BBF6455F278850C /* Sources */,
+				5486751259DB14BA1A149DD0B8FD6055 /* Frameworks */,
+				D69B9418B8385F46FEA40FFB6E1CB9E0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -391,8 +394,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -429,7 +432,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE5E7862C4860D8A272BEE65ACE0B8A4 /* Resources */ = {
+		D69B9418B8385F46FEA40FFB6E1CB9E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,6 +442,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		329146085DEDE5845BBF6455F278850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B1921D44030A1604E597D6C520207E /* EventNotifyingControllerProxy.swift in Sources */,
+				C345D4EE886CE54B7407356656277662 /* Hierarchy.swift in Sources */,
+				7ACD766B342A4478A1D1E9B24414CCAE /* HierarchyDecorator.swift in Sources */,
+				29399FC6F19E569B93CFB0F6EBA78C06 /* HierarchyGraphManager.swift in Sources */,
+				F301F3F8620E9204127E3596AC9487E5 /* HierarchyHostingManager.swift in Sources */,
+				B14BDB4A0961834A23527034551E85B7 /* HierarchyNavigator.swift in Sources */,
+				05D518ADB2310AF8D4BF4795CE21D1F3 /* HierarchyRoute.swift in Sources */,
+				0BDFCD908E4CFC18519079DF3DC78412 /* HierarchyRoute+Builder.swift in Sources */,
+				A40DF4C4C6458C8D23DFD1C370CE2C4E /* HierarchyRoute+Equatable.swift in Sources */,
+				2E51BE66B681F0100E3AF9E7224DFD8B /* HierarchyRouteRenderer.swift in Sources */,
+				0C7B058D652E9789081911EF65250435 /* HierarchyUI-dummy.m in Sources */,
+				8BAA178DDBECCD7D8BFCA81F3A3E805B /* HostingControllerProxy.swift in Sources */,
+				3FC1B54F5705D81CDCF000C8E4BFC92D /* NavigationControllerProxy.swift in Sources */,
+				280BF8F34FB085A55E131BDC221DBEAC /* TabBarControllerProxy.swift in Sources */,
+				A4CD9FC7A7D7D39351513B980C3AF032 /* TabBarHierarchy.swift in Sources */,
+				E4F2ED4C57DD9BCA8C2B94F7A5F9F79B /* TabBarHierarchy+Hosting.swift in Sources */,
+				A5C63EC235B4E9DF0C87CB7F70496D56 /* View+Route.swift in Sources */,
+				15F401C837540BF2F85C484725C6949D /* WeakReference.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4624F57914F98694D5C944F41E95A709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,81 +483,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E04E250FAA54F511A0BE3F4F582D06A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7CEBDA1FB5C575BF05CE2BCCCEDF31A /* EventNotifyingControllerProxy.swift in Sources */,
-				B1350376FD930FA49A233A119B78A4A9 /* Hierarchy.swift in Sources */,
-				EDA9ADC6DF5A8BBEE836077D5201F728 /* HierarchyGraphManager.swift in Sources */,
-				B26F1B10CFBB7CC8FC7501BD515D6121 /* HierarchyHostingManager.swift in Sources */,
-				8EA82F0F05FF2F6258842340A3C307CA /* HierarchyNavigator.swift in Sources */,
-				B95DD2D5861B9709F3CB191905FC1DE6 /* HierarchyRoute.swift in Sources */,
-				905A964A3D409079099D9BCBDB1A469E /* HierarchyRoute+Builder.swift in Sources */,
-				5CA9FD7B52DF853469B652652B509539 /* HierarchyRoute+Equatable.swift in Sources */,
-				6F6C9A579B4B37861582E72C51693E69 /* HierarchyRouteRenderer.swift in Sources */,
-				6C534E67966E6CDEC7D7DBF6953FD21D /* HierarchyUI-dummy.m in Sources */,
-				784CCF4221FFB7DDB1479E90E0BE60D5 /* HostingControllerProxy.swift in Sources */,
-				51475929F174103483ACCA68773C530F /* NavigationControllerProxy.swift in Sources */,
-				09C86A0EC8E065A90166D4AA8BF77DA5 /* TabBarControllerProxy.swift in Sources */,
-				67DF8202F9B0EA94906DD08374B0A76A /* TabBarHierarchy.swift in Sources */,
-				90C95414364B0ED905699828DF6E900C /* TabBarHierarchy+Hosting.swift in Sources */,
-				F903125789CBD8973BF1491BABF9F059 /* View+Route.swift in Sources */,
-				A628340CF4398F36A188940FF501FA36 /* WeakReference.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6F38998844E1AB773420281B3228D0DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HierarchyUI;
-			target = D20E82F18AF93FE765CE738F029FEB1F /* HierarchyUI */;
-			targetProxy = B5F82E460CFAF9A600B0B63F258E17CB /* PBXContainerItemProxy */;
-		};
-		A93E31C7D9B50BE10DB1789B51D6655A /* PBXTargetDependency */ = {
+		0782862E0BFE6E5DC92748AE4D1DA442 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HierarchyUI_Example";
 			target = 8DCAAF7273146A4ED04AEBCAAB67B061 /* Pods-HierarchyUI_Example */;
-			targetProxy = 1575B60B7B196A56B0876F5B7C248265 /* PBXContainerItemProxy */;
+			targetProxy = 63077B166B956C0B578FC0F233DF8635 /* PBXContainerItemProxy */;
+		};
+		1D758C86693647D0FF2F1737818ECB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HierarchyUI;
+			target = D20E82F18AF93FE765CE738F029FEB1F /* HierarchyUI */;
+			targetProxy = 874224F1BDED57D78C108F77E4CB363B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		13D187FA13A87047354EFDC707BA134E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BFB8D5E44A4296D8B63AF6D6206FC78 /* HierarchyUI.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HierarchyUI/HierarchyUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HierarchyUI/HierarchyUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HierarchyUI/HierarchyUI.modulemap";
-				PRODUCT_MODULE_NAME = HierarchyUI;
-				PRODUCT_NAME = HierarchyUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		47E9894C13E1537B27DF92B9145BEC91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3507E58A832EB47AE3DE3B21F416B6F8 /* Pods-HierarchyUI_Example.release.xcconfig */;
@@ -631,6 +602,39 @@
 			};
 			name = Debug;
 		};
+		9490A1995B4AA1F44BC375B7B0F9C422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B959FDECD4C6A166CCA0A2EE6559796C /* HierarchyUI.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HierarchyUI/HierarchyUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HierarchyUI/HierarchyUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HierarchyUI/HierarchyUI.modulemap";
+				PRODUCT_MODULE_NAME = HierarchyUI;
+				PRODUCT_NAME = HierarchyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -692,38 +696,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		C0DECC70532A52EBFA50EF3A51E38405 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7FA9BE0F0BE0EF59A978C64DFC7ECE5 /* HierarchyUI.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HierarchyUI/HierarchyUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HierarchyUI/HierarchyUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HierarchyUI/HierarchyUI.modulemap";
-				PRODUCT_MODULE_NAME = HierarchyUI;
-				PRODUCT_NAME = HierarchyUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		C5D8E6897B228F83C43E1FB8F9284A38 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -794,6 +766,38 @@
 			};
 			name = Debug;
 		};
+		E44FCE1D7F7248701EBB8CC55C573819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180839CAA4890E54176822C7C4343151 /* HierarchyUI.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HierarchyUI/HierarchyUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HierarchyUI/HierarchyUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HierarchyUI/HierarchyUI.modulemap";
+				PRODUCT_MODULE_NAME = HierarchyUI;
+				PRODUCT_NAME = HierarchyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FE1CF7E9890BCE2A11C99F6DCA029DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E8D8EA07F82BED50E7A286441381CA2 /* Pods-HierarchyUI_Example.debug.xcconfig */;
@@ -840,6 +844,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		819F480D6B6E437F8C72160D81449D48 /* Build configuration list for PBXNativeTarget "HierarchyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44FCE1D7F7248701EBB8CC55C573819 /* Debug */,
+				9490A1995B4AA1F44BC375B7B0F9C422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B05A7C78B9882DD337C89CA15CE9A85 /* Build configuration list for PBXNativeTarget "Pods-HierarchyUI_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -854,15 +867,6 @@
 			buildConfigurations = (
 				FE1CF7E9890BCE2A11C99F6DCA029DEA /* Debug */,
 				47E9894C13E1537B27DF92B9145BEC91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F6BE0F9B6C14EA256E5BC6D006C9A9C0 /* Build configuration list for PBXNativeTarget "HierarchyUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0DECC70532A52EBFA50EF3A51E38405 /* Debug */,
-				13D187FA13A87047354EFDC707BA134E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -36,10 +36,20 @@ internal final class NavigationManagingHostingControllerProxy: BaseManuallyContr
     
     var onDismissEvent: (() -> Void)?
 
-    init(associatedRouteReference: NavigationHierarchyRoute, navigator: HierarchyNavigator) {
+    init(
+        associatedRouteReference: NavigationHierarchyRoute,
+        navigator: HierarchyNavigator,
+        decorator: HierarchyDecorator
+    ) {
         self.associatedRouteReference = associatedRouteReference
         if case .screen(let rootView) = associatedRouteReference.type {
-            super.init(rootView: AnyView(rootView().environmentObject(navigator)))
+            super.init(
+                rootView: AnyView(
+                    rootView()
+                        .environmentObject(navigator)
+                        .environmentObject(decorator)
+                )
+            )
         } else {
             assertionFailure("Only Routes without Child Views can be attached to Hosting Controller.")
             super.init(rootView: AnyView(EmptyView()))
@@ -78,9 +88,5 @@ extension NavigationManagingHostingControllerProxy: NavigationEventNotifyingCont
 extension NavigationManagingHostingControllerProxy: UIAdaptivePresentationControllerDelegate {
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         onDismissEvent?()
-    }
-    
-    func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController) {
-        print()
     }
 }

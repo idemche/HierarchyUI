@@ -13,17 +13,20 @@ internal final class HostingManager {
 
     func renderInHostingController(
         route: R,
-        embedding navigator: HierarchyNavigator
+        embedding navigator: HierarchyNavigator,
+        decorated decorator: HierarchyDecorator
     ) -> NavigationEventNotifyingController {
         switch route.type {
         case .screen:
             return NavigationManagingHostingControllerProxy(
                 associatedRouteReference: route,
-                navigator: navigator
+                navigator: navigator,
+                decorator: decorator
             )
         case .tabBar(let hierarchy):
             return hierarchy.provideHostingController(
                 with: navigator,
+                and: decorator,
                 for: route
             )
         }

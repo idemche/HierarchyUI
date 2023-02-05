@@ -23,6 +23,7 @@ final class NavigationControllerProxy: UINavigationController {
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
         presentationController?.delegate = self
+        navigationBar.prefersLargeTitles = true
     }
     
     required init?(coder aDecoder: NSCoder) {

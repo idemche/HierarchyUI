@@ -15,6 +15,7 @@ extension TabBarHierarchy {
     /// of navigation events.
     internal func provideHostingController(
         with navigator: HierarchyNavigator,
+        and decorator: HierarchyDecorator,
         for parentContainerRoute: NavigationHierarchyRoute,
         onPopToRootEvent: ((_ tabIndex: Int) -> Void)? = nil
     ) -> NavigationEventNotifyingController {
@@ -30,7 +31,8 @@ extension TabBarHierarchy {
                 case .screen where !tab.route.nextRoute().isEmpty:
                     let hosting = NavigationManagingHostingControllerProxy(
                         associatedRouteReference: tab.route,
-                        navigator: navigator
+                        navigator: navigator,
+                        decorator: decorator
                     )
                     hosting.tabBarItem = tab.item
                     tab.route.ownerHostingController = hosting
@@ -41,7 +43,8 @@ extension TabBarHierarchy {
                 case .screen:
                     let hosting: UIHostingController = NavigationManagingHostingControllerProxy(
                         associatedRouteReference: tab.route,
-                        navigator: navigator
+                        navigator: navigator,
+                        decorator: decorator
                     )
                     tab.route.ownerHostingController = hosting
                     tab.route.parentContainerRoute = parentContainerRoute

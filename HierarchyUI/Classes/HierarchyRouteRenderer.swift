@@ -22,6 +22,12 @@ public final class NavigationHierarchyRouteRenderer {
             self?.handle(navigationEvent: event)
         }
     )
+    /// Decoration handler. Provides navigation controller to decorate it.
+    private lazy var decorator: HierarchyDecorator = HierarchyDecorator(
+        onProvideNavigationController: { [weak self] in
+            self?.graphManager.getNavigationExecutingRoute(navType: .pushable)?.ownerHostingController?.navigationController
+        }
+    )
     
     public init() {}
 
@@ -29,7 +35,11 @@ public final class NavigationHierarchyRouteRenderer {
         let route = hierarchy.structure()
         graphManager.move(to: route)
 
-        let hosting = hostingManager.renderInHostingController(route: route, embedding: navigator)
+        let hosting = hostingManager.renderInHostingController(
+            route: route,
+            embedding: navigator,
+            decorated: decorator
+        )
 
         switch route.type {
         case .tabBar:
@@ -58,7 +68,8 @@ public final class NavigationHierarchyRouteRenderer {
 
             let nextRouteHostingController = hostingManager.renderInHostingController(
                 route: nextPushableRoute,
-                embedding: navigator
+                embedding: navigator,
+                decorated: decorator
             )
             .set(onPopEvent: { [weak graphManager] in
                 guard let graphManager = graphManager else { return assertionFailure("Self reference deallocated") }
@@ -164,13 +175,19 @@ public final class NavigationHierarchyRouteRenderer {
             
             /// Setting up and installing the route
             /// ======================================================================
-            let hosting = hostingManager.renderInHostingController(route: modalRoute, embedding: navigator)
-                .set(onDismissEvent: { [weak graphManager] in
+            let hosting = hostingManager.renderInHostingController(
+                route: modalRoute,
+                embedding: navigator,
+                decorated: decorator
+            )
+            .set(
+                onDismissEvent: { [weak graphManager] in
                     guard let graphManager = graphManager else { return assertionFailure("Self reference deallocated") }
                     let targetRouteWrapped = graphManager.getPreviousHierarchyRoute(navType: .modal, for: nil)
                     guard let targetRoute = targetRouteWrapped else { return assertionFailure() }
                     graphManager.move(to: targetRoute)
-                })
+                }
+            )
             hosting.modalPresentationStyle = settings.isFullscreen ? .fullScreen : .automatic
             modalRoute.ownerHostingController = hosting
 
@@ -213,7 +230,11 @@ public final class NavigationHierarchyRouteRenderer {
             
             /// Installing the route
             /// ======================================================================
-            let hosting = hostingManager.renderInHostingController(route: nextReplacerRoute, embedding: navigator)
+            let hosting = hostingManager.renderInHostingController(
+                route: nextReplacerRoute,
+                embedding: navigator,
+                decorated: decorator
+            )
             nextReplacerRoute.ownerHostingController = hosting
             /// ======================================================================
             
